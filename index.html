@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>CV Anaïs Ferreira</title>
+<style>
+body { font-family:'Arial'; margin:0; background:#f5f6fa; display:flex; color:#333; }
+nav { width:220px; background:#2c3e50; color:white; position:fixed; height:100%; padding-top:40px; }
+nav h2 { text-align:center; margin-bottom:20px; }
+nav ul { list-style:none; padding:0; }
+nav li { padding:15px 20px; cursor:pointer; transition:0.3s; }
+nav li:hover { background:#34495e; }
+main { margin-left:220px; padding:40px 30px; max-width:900px; }
+section { margin-bottom:50px; }
+section h3 { border-bottom:3px solid #2c3e50; padding-bottom:5px; margin-bottom:20px; color:#2c3e50; }
+.card { background:white; padding:20px; border-radius:10px; box-shadow:0 3px 10px rgba(0,0,0,0.1); margin-bottom:20px; opacity:0; transform:translateY(30px); transition:all 0.6s ease; }
+.card.visible { opacity:1; transform:translateY(0); }
+header { text-align:center; margin-bottom:40px; }
+header img { width:140px; height:140px; border-radius:50%; object-fit:cover; margin-bottom:20px; border:3px solid #2c3e50; }
+a { color:#2980b9; text-decoration:none; }
+a:hover { text-decoration:underline; }
+ul { padding-left:0; }
+li { margin-bottom:6px; }
+</style>
+</head>
+<body>
+
+<nav>
+<h2>Anaïs Ferreira</h2>
+<ul>
+<li onclick="scrollToSection('about')">À propos</li>
+<li onclick="scrollToSection('education')">Éducation</li>
+<li onclick="scrollToSection('projects')">Projets</li>
+<li onclick="scrollToSection('skills')">Compétences</li>
+<li onclick="scrollToSection('experience')">Expériences</li>
+<li onclick="scrollToSection('engagements')">Engagements</li>
+<li onclick="scrollToSection('certifications')">Certifications</li>
+<li onclick="scrollToSection('languages')">Langues</li>
+<li onclick="scrollToSection('hobbies')">Hobbies</li>
+<li onclick="scrollToSection('awards')">Distinctions</li>
+<li onclick="scrollToSection('contact')">Contact</li>
+</ul>
+</nav>
+
+<main>
+<header>
+<img id="photo" src="photo_cv" alt="Photo Anaïs Ferreira">
+<h1 id="name"></h1>
+<h2 id="title"></h2>
+<p id="bio"></p>
+</header>
+
+<section id="about"><h3>À propos</h3><p id="about-text"></p></section>
+<section id="education"><h3>Éducation</h3></section>
+<section id="projects"><h3>Projets</h3></section>
+<section id="skills"><h3>Compétences</h3></section>
+<section id="experience"><h3>Expériences</h3></section>
+<section id="engagements"><h3>Engagements</h3></section>
+<section id="certifications"><h3>Certifications</h3></section>
+<section id="languages"><h3>Langues</h3><ul id="lang-list" class="card"></ul></section>
+<section id="hobbies"><h3>Hobbies</h3><ul id="hobby-list" class="card"></ul></section>
+<section id="awards"><h3>Distinctions & Awards</h3><ul id="award-list" class="card"></ul></section>
+<section id="contact"><h3>Contact</h3><p id="contact-text"></p></section>
+</main>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelector("nav").style.overflowY = "auto";
+  });
+fetch("site.json")
+.then(res => res.json())
+.then(data => {
+
+  document.getElementById("photo").src = data.photo_path;
+  document.getElementById("name").innerText = data.name;
+  document.getElementById("title").innerText = data.title;
+  document.getElementById("bio").innerText = data.bio;
+  document.getElementById("about-text").innerText = data.about;
+
+  function addCard(sectionId, htmlContent){
+    let card = document.createElement("div");
+    card.className = "card";
+    card.innerHTML = htmlContent;
+    document.getElementById(sectionId).appendChild(card);
+  }
+
+ // Education
+data.education.forEach(edu => {
+  let html = `<h4>${edu.title}</h4>
+              <p>${edu.company} | ${edu.period} | ${edu.location||""}</p>
+              <p>${edu.description}</p>`;
+
+  // Gestion des photos multiples
+  if(edu.photo_paths) {
+    edu.photo_paths.forEach(path => {
+      html += `<img src="${path}" style="width:100px; margin:5px;">`;
+    });
+  } else if(edu.photo_path) {
+    html += `<img src="${edu.photo_path}" style="width:100px; margin:5px;">`;
+  }
+
+  addCard("education", html);
+});
+
+  // Compétences
+  data.skills.forEach(skill => {
+    addCard("skills",
+      `<h4>${skill.category}</h4>
+       <p><b>Technologies :</b> ${skill.technologies.join(", ")}</p>
+       <p>${skill.description}</p>`);
+  });
+
+ // Projets
+data.projects.forEach(proj => {
+  let html = `<h4>${proj.title}</h4>
+              <p>${proj.description}</p>
+              <p><b>Technologies :</b> ${proj.technologies.join(", ")}</p>`;
+  if(proj.details) html += `<p>${proj.details}</p>`;
+
+  // PDFs
+  if(proj.pdf_links) {
+    proj.pdf_links.forEach(link => {
+      html += `<p><a href="${link}" target="_blank">Voir le PDF</a></p>`;
+    });
+  } else if(proj.pdf_link) {
+    html += `<p><a href="${proj.pdf_link}" target="_blank">Voir le PDF</a></p>`;
+  }
+
+  // PHOTOS
+  if(proj.photo_paths) {
+    proj.photo_paths.forEach(path => {
+      html += `<img src="${path}" style="width:150px;margin-top:5px;">`;
+    });
+  } else if(proj.photo_path) {
+    html += `<img src="${proj.photo_path}" style="width:150px;margin-top:5px;">`;
+  }
+
+  addCard("projects", html);
+});
+
+
+  // Expériences
+  data.experience.forEach(exp => {
+    let html = `<h4>${exp.title} - ${exp.company}</h4>
+                <p>${exp.period} | ${exp.location||""}</p>
+                <p>${exp.description}</p>`;
+    if(exp.achievements) html += "<ul>" + exp.achievements.map(a=>`<li>${a}</li>`).join("") + "</ul>";
+    if(exp.technologies) html += `<p><b>Technologies :</b> ${exp.technologies.join(", ")}</p>`;
+    if(exp.photo_path) html += `<img src="${exp.photo_path}" style="width:100px;margin-top:5px;">`;
+    addCard("experience", html);
+  });
+
+
+ // Engagements
+data.engagements.forEach(e => {
+  let html = `<h4>${e.role}</h4>
+              <p>${e.organization} | ${e.period}</p>`;
+
+  if(e.photo_path) {
+    html += `<img src="${e.photo_path}" style="width:120px;margin-top:5px;">`;
+  }
+
+  if(e.description) {
+    html += `<p>${e.description}</p>`;
+  }
+
+  addCard("engagements", html);
+});
+
+
+
+
+
+  // Certifications
+  data.certifications.forEach(c => {
+    if(typeof c === "string") {
+      addCard("certifications", `<p>${c}</p>`);
+    } else {
+      let html = `<h4>${c.name}</h4>`;
+      if(c.photo_path) html += `<img src="${c.photo_path}" style="width:120px;margin-top:5px;">`;
+      if(c.pdf_link) html += `<p><a href="${c.pdf_link}" target="_blank">Voir le PDF</a></p>`;
+      addCard("certifications", html);
+    }
+  });
+
+  // Langues
+  data.languages.forEach(l => {
+    let li = document.createElement("li");
+    li.innerText = `${l.language} - ${l.level}`;
+    document.getElementById("lang-list").appendChild(li);
+  });
+
+  // Hobbies
+  data.hobbies.forEach(h => {
+    let li = document.createElement("li");
+    li.innerText = h;
+    document.getElementById("hobby-list").appendChild(li);
+  });
+
+  // Awards
+  data.awards.forEach(a => {
+    let li = document.createElement("li");
+    li.innerText = a;
+    document.getElementById("award-list").appendChild(li);
+  });
+
+  // Contact
+  document.getElementById("contact-text").innerHTML =
+    `Email : <a href="mailto:${data.contact.email}">${data.contact.email}</a> | 
+     LinkedIn : <a href="https://${data.contact.linkedin}" target="_blank">${data.contact.linkedin}</a> | 
+     Téléphone : ${data.contact.phone}`;
+
+  // Animation des cartes
+  const cards = document.querySelectorAll(".card");
+  cards.forEach((c, i) => setTimeout(() => c.classList.add("visible"), i*100));
+})
+.catch(err => console.error("Erreur JSON :", err));
+
+function scrollToSection(id){
+  document.getElementById(id).scrollIntoView({behavior:"smooth"});
+}
+</script>
+</body>
+</html>

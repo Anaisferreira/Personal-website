@@ -1,0 +1,202 @@
+{
+  "name": "Anaïs Ferreira",
+  "title": "Étudiante en Ingénierie Digitale et Management (UTC/EDHEC)",
+  "bio": "Étudiante en double diplôme à l'UTC et l'EDHEC, passionnée par la finance, la data et l’innovation. J’ai une expérience solide en gestion de projets, communication digitale et entrepreneuriat, avec un fort esprit analytique et entrepreneurial.",
+  "about": "Mon parcours hybride en ingénierie et management m’a permis de développer des compétences analytiques (finance, data, IA) et organisationnelles (gestion de projets, leadership, stratégie digitale). J’ai mené des projets entrepreneuriaux, coordonné la communication d’une Junior-Entreprise et représenté des associations patriotiques au niveau national. Curieuse et engagée, je me distingue par ma capacité à relier rigueur analytique, créativité et esprit entrepreneurial.",
+  "photo_path": "images/photo_cv.jpg",
+  "skills": [
+    {
+      "category": "Langages de programmation & outils",
+      "technologies": ["Python", "SQL", "R", "HTML", "CSS", "PHP", "Excel", "VBA"],
+      "description": "Analyse de données, développement web et scripts d’automatisation appliqués à des projets réels."
+    },
+    {
+      "category": "Gestion de projets",
+      "technologies": ["Analyse de données", "Business Plan", "Analyse de marché"],
+      "description": "Encadrement d’équipes, suivi de projets, planification et élaboration de stratégies."
+    }
+  ],
+  "projects": [
+    {
+      "id": "smart-insoles",
+      "title": "Startup project — Smart adaptive insoles",
+      "description": "Projet entrepreneurial développé dans le cadre du programme Les Entrep’ : conception de semelles intelligentes auto-adaptatives équipées de capteurs de pression.",
+      "details": "Étude de marché (100+ réponses), modélisation business, prototype, présentation devant jury d’entrepreneurs et d’académiques.",
+      "technologies": ["Business Model Canvas", "Étude de marché", "Pitch"],
+      "location": "Compiègne",
+      "period": "2023–2024",
+      "pdf_link": "pdf/entrep.pdf"
+    },
+    {
+      "id": "Curtain X",
+      "title": "Startup project — Smart Curtain",
+      "description": "Projet entrepreneurial développé dans le cadre du programme d'innovation à l'université de Shanghai : conception de rideaux intelligents auto-adaptatifs équipés de capteurs de lumière et température.",
+      "details": "Modélisation business, prototype, présentation devant jury d’entrepreneurs.",
+      "technologies": ["Business Model Canvas", "Étude de marché", "Pitch"],
+      "location": "Shanghai",
+      "period": "2025",
+      "pdf_link": "pdf/Curtain_X.pdf"
+    },
+    {
+      "id": "Mémoire",
+      "title": "Transmission des mémoires traumatisantes",
+      "description": "Mémoire qui traite de la transmission des mémoires traumatisantes entre générations, en se basant sur des récits personnels de la période de dictature au Portugal et du génocide arménien.",
+      "details": "Reccueil de témoignages, analyse thématique et rédaction.",
+      "technologies": ["Recherche qualitative", "Analyse thématique", "Rédaction académique"],
+      "location": "Compiègne",
+      "period": "2023",
+      "pdf_link": "pdf/transmission_memoires_traumatisantes.pdf"
+    },
+    {
+      "id": "Communication BIDM",
+      "title": "Proposition de stratégie de communication digitale et charte graphique — BIDM",
+      "description": "Elaboration d'une stratégie de communication digitale et d'une charte graphique pour le Bachelor Ingénierie Digitale et Management (BIDM), visant à renforcer sa présence en ligne et à améliorer son image de marque.",
+      "details": "Analyse de la présence actuelle, définition des objectifs, création de contenu visuel et rédactionnel.",
+      "technologies": ["Stratégie digitale", "Marketing de contenu", "Design graphique"],
+      "location": "Compiègne",
+      "period": "2024",
+      "pdf_links": [
+        "pdf/communication_bidm.pdf", 
+        "pdf/charte_graphique.pdf"
+      ]      
+    },
+    {
+      "id": "Analyse de marché de la pâte à tartiner",
+      "title": "Analyse de marché de la pâte à tartiner",
+      "description": "Analyse de marché de la pâte à tartiner, incluant étude de la concurrence, analyse SWOT et recommandations stratégiques.",
+      "details": "Recherche documentaire, analyse de données et rédaction d’un rapport.",
+      "technologies": ["Analyse de marché", "Analyse SWOT", "Rédaction de rapport"],
+      "location": "Compiègne",
+      "period": "2024",
+      "pdf_links": [
+      "pdf/marche_pate_tartiner.pdf",
+      "pdf/marketing_mix.pdf"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "title": "Community Manager",
+      "company": "Junior UTC",
+      "location": "Compiègne, France",
+      "period": "Septembre 2024 – Février 2025",
+      "description": "Pilotage de la communication digitale de la Junior-Entreprise : stratégie, création de contenu, suivi des performances.",
+      "achievements": [
+        "15 publications Instagram cumulant plus de 70 000 vues (+45% de reach en 5 mois)",
+        "15 publications LinkedIn générant 25 000 impressions",
+        "Organisation de campagnes de communication ciblées pour recruter et fidéliser les membres"
+      ],
+      "technologies": ["Stratégie digitale", "Marketing de contenu", "Analyse de données"],
+      "photo_path": "images/jutc_logo.jpg"
+    },
+    {
+      "title": "Internship — Reception, Accounting, Finance",
+      "company": "Mairie de Villers-Sous-Saint-Leu",
+      "location": "France",
+      "period": "2025",
+      "description": "Accueil du public, participation à des missions administratives et financières.",
+      "achievements": [
+        "Accueil de 100+ usagers par semaine",
+        "Contribution à la gestion d’un budget municipal de 2M+ €"
+      ]
+    },
+    {
+      "title": "Worker Internship",
+      "company": "Imerys",
+      "location": "Villers-Sous-Saint-Leu, France",
+      "period": "Janvier – Février 2024",
+      "description": "Découverte du monde industriel et participation aux activités de production.",
+      "achievements": [
+        "Contrôle qualité et conditionnement de 50 000 produits par semaine",
+        "Participation à la maintenance des machines de production"
+      ],
+      "technologies": ["Production industrielle", "Contrôle qualité", "Travail en équipe"],
+      "photo_path": "images/imerys.jpg",
+      "pdf_link": "pdf/stage_imerys.pdf"
+    }
+  ],
+  "engagements": [
+    {
+      "role": "Porte-drapeau",
+      "organization": "Mémoire et Avenir Citoyen - Cérémonies nationales",
+      "period": "Depuis 2017",
+      "photo_path": "images/memoire_avenir_citoyen.jpeg"
+    },
+    {
+      "role": "Ambassadrice",
+      "organization": "Unibuddy UTC/EDHEC",
+      "period": "Depuis 2024"
+    },
+    {
+      "role": "Vice-présidente",
+      "organization": "Conseil Départemental Jeune",
+      "period": "2017 – 2019",
+      "photo_path": "images/cdj.jpg"
+    }
+  ],
+  "education": [
+    {
+      "title": "Double diplôme Ingénierie digitale & Management",
+      "company": "EDHEC Business School & UTC",
+      "location": "Lille & Compiègne",
+      "period": "2023 – 2027",
+      "description": "Parcours hybride numérique / management. Mobilité académique : semestre à Shanghai (UTSEUS).",
+      "photo_paths": [
+        "images/logo_utc.png",
+        "images/logo_edhec.png"
+      ]
+    },
+    {
+      "title": "Baccalauréat Franco-Allemand (Abibac)",
+      "company": "Lycée Félix Faure",
+      "location": "Beauvais",
+      "period": "2020 – 2023",
+      "description": "Mention Bien (15,7) / Abitur Mention Très Bien. Spécialités mathématiques, physique et allemand."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Sustainability in the Age of AI - Alibaba Cloud",
+      "photo_path": "images/sustainability_in_the_age_of_AI.jpg"
+    },
+    {
+      "name": "AI-driven Sustainability for the Sports Industry - Alibaba Cloud",
+      "photo_path": "images/AI_driven_sustainability_for_the_sports_industry.jpg"
+    },
+     {
+      "name": "Using generative AI Ethically and Responsibly - Alibaba Cloud",
+      "photo_path": "images/using_generative_ai_ethically_and_responsibly.jpg"
+    },
+    {
+      "name": "Adoption Generative AI Ethically and Responsibly - Alibaba Cloud",
+      "photo_path": "images/adoption_generative_AI_ethically_and_responsibly.jpg"
+    },
+    {
+      "name": "Certification Pix",
+      "pdf_link": "pdf/pix.pdf"
+    }
+  ],
+  "languages": [
+    { "language": "Français", "level": "Natif" },
+    { "language": "Anglais", "level": "Courant" },
+    { "language": "Allemand", "level": "Courant (séjour de 3 mois — programme Brigitte Sauzay)" }
+  ],
+  "hobbies": [
+    "Entrepreneuriat",
+    "Voyages interculturels",
+    "Musique (piano)",
+    "Mode & luxe",
+    "Engagement citoyen"
+  ],
+  "awards": [
+    "1er prix académique — Olympiades de mathématiques",
+    "1er prix par équipe — Débat citoyen en allemand",
+    "1er prix individuel — Concours d’éloquence lycée",
+    "Participation — Fleur d’éloquence"
+  ],
+  "contact": {
+    "email": "anaisferreira43@gmail.com",
+    "linkedin": "www.linkedin.com/in/anaïs-ferreira-18b204297",
+    "phone": "+33 7 68 67 75 77"
+  }
+}
