@@ -25,7 +25,7 @@
       "technologies": ["Business Model Canvas", "Étude de marché", "Pitch"],
       "location": "Compiègne",
       "period": "2023–2024",
-      "pdf_link": "entrep.pdf"
+      "pdf_link": "pdf/entrep.pdf"
     },
     {
       "id": "Curtain X",
@@ -200,4 +200,5 @@
     "phone": "+33 7 68 67 75 77"
   }
 }
+
 
