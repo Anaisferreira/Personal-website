@@ -1,9 +1,8 @@
 {
   "name": "Anaïs Ferreira",
   "title": "Étudiante en Ingénierie Digitale et Management (UTC/EDHEC)",
-  "bio": "Étudiante en double diplôme à l'UTC et l'EDHEC, passionnée par la finance, la data et l’innovation. J’ai une expérience solide en gestion de projets, communication digitale et entrepreneuriat, avec un fort esprit analytique et entrepreneurial.",
+  "bio": "Étudiante en double diplôme à l'UTC et l'EDHEC, passionnée par la finance, la data et l'innovation. J'ai une expérience solide en gestion de projets, communication digitale et entrepreneuriat, avec un fort esprit analytique et entrepreneurial.",
   "about": "Finance, data, gestion de projet et leadership : ce sont les compétences que j'ai cultivées au fil de mon parcours hybride en ingénierie et management. Elles m'ont permis de transformer des idées en projets entrepreneuriaux concrets, de piloter la communication d'une Junior-Entreprise et de représenter des associations patriotiques au niveau national. Curieuse, passionnée et engagée, je mêle rigueur analytique et créativité, en m'inspirant de la mode, du luxe et de l'innovation technologique. Mon objectif ? Transformer des concepts ambitieux en solutions tangibles et impactantes, où l'esthétique rencontre l'efficacité et où la vision devient action.",
-
   "photo_path": "images/photo_cv.jpg",
   "skills": [
     {
@@ -14,25 +13,25 @@
     {
       "category": "Gestion de projets",
       "technologies": ["Analyse de données", "Business Plan", "Analyse de marché"],
-      "description": "Encadrement d’équipes, suivi de projets, planification et élaboration de stratégies."
+      "description": "Encadrement d'équipes, suivi de projets, planification et élaboration de stratégies."
     }
   ],
   "projects": [
     {
       "id": "smart-insoles",
       "title": "Startup project — Smart adaptive insoles",
-      "description": "Projet entrepreneurial développé dans le cadre du programme Les Entrep’ : conception de semelles intelligentes auto-adaptatives équipées de capteurs de pression.",
-      "details": "Étude de marché (100+ réponses), modélisation business, prototype, présentation devant jury d’entrepreneurs et d’académiques.",
+      "description": "Projet entrepreneurial développé dans le cadre du programme Les Entrep' : conception de semelles intelligentes auto-adaptatives équipées de capteurs de pression.",
+      "details": "Étude de marché (100+ réponses), modélisation business, prototype, présentation devant jury d'entrepreneurs et d'académiques.",
       "technologies": ["Business Model Canvas", "Étude de marché", "Pitch"],
       "location": "Compiègne",
-      "period": "2023–2024",
+      "period": "2023-2024",
       "pdf_link": "pdf/entrep.pdf"
     },
     {
       "id": "Curtain X",
       "title": "Startup project — Smart Curtain",
       "description": "Projet entrepreneurial développé dans le cadre du programme d'innovation à l'université de Shanghai : conception de rideaux intelligents auto-adaptatifs équipés de capteurs de lumière et température.",
-      "details": "Modélisation business, prototype, présentation devant jury d’entrepreneurs.",
+      "details": "Modélisation business, prototype, présentation devant jury d'entrepreneurs.",
       "technologies": ["Business Model Canvas", "Étude de marché", "Pitch"],
       "location": "Shanghai",
       "period": "2025",
@@ -42,7 +41,7 @@
       "id": "Mémoire",
       "title": "Transmission des mémoires traumatisantes",
       "description": "Mémoire qui traite de la transmission des mémoires traumatisantes entre générations, en se basant sur des récits personnels de la période de dictature au Portugal et du génocide arménien.",
-      "details": "Reccueil de témoignages, analyse thématique et rédaction.",
+      "details": "Recueil de témoignages, analyse thématique et rédaction.",
       "technologies": ["Recherche qualitative", "Analyse thématique", "Rédaction académique"],
       "location": "Compiègne",
       "period": "2023",
@@ -57,21 +56,21 @@
       "location": "Compiègne",
       "period": "2024",
       "pdf_links": [
-        "pdf/communication_bidm.pdf", 
+        "pdf/communication_bidm.pdf",
         "pdf/charte_graphique.pdf"
-      ]      
+      ]
     },
     {
       "id": "Analyse de marché de la pâte à tartiner",
       "title": "Analyse de marché de la pâte à tartiner",
       "description": "Analyse de marché de la pâte à tartiner, incluant étude de la concurrence, analyse SWOT et recommandations stratégiques.",
-      "details": "Recherche documentaire, analyse de données et rédaction d’un rapport.",
+      "details": "Recherche documentaire, analyse de données et rédaction d'un rapport.",
       "technologies": ["Analyse de marché", "Analyse SWOT", "Rédaction de rapport"],
       "location": "Compiègne",
       "period": "2024",
       "pdf_links": [
-      "pdf/marche_pate_tartiner.pdf",
-      "pdf/marketing_mix.pdf"
+        "pdf/marche_pate_tartiner.pdf",
+        "pdf/marketing_mix.pdf"
       ]
     }
   ],
@@ -98,7 +97,7 @@
       "description": "Accueil du public, participation à des missions administratives et financières.",
       "achievements": [
         "Accueil de 100+ usagers par semaine",
-        "Contribution à la gestion d’un budget municipal de 2M+ €"
+        "Contribution à la gestion d'un budget municipal de 2M+ €"
       ]
     },
     {
@@ -164,7 +163,7 @@
       "name": "AI-driven Sustainability for the Sports Industry - Alibaba Cloud",
       "photo_path": "images/AI_driven_sustainability_for_the_sports_industry.jpg"
     },
-     {
+    {
       "name": "Using generative AI Ethically and Responsibly - Alibaba Cloud",
       "photo_path": "images/using_generative_ai_ethically_and_responsibly.jpg"
     },
@@ -180,7 +179,7 @@
   "languages": [
     { "language": "Français", "level": "Natif" },
     { "language": "Anglais", "level": "Courant" },
-    { "language": "Allemand", "level": "Courant (séjour de 3 mois — programme Brigitte Sauzay)" }
+    { "language": "Allemand", "level": "Courant (séjour de 3 mois - programme Brigitte Sauzay)" }
   ],
   "hobbies": [
     "Entrepreneuriat",
@@ -192,19 +191,12 @@
   "awards": [
     "1er prix académique — Olympiades de mathématiques",
     "1er prix par équipe — Débat citoyen en allemand",
-    "1er prix individuel — Concours d’éloquence lycée",
-    "Participation — Fleur d’éloquence"
+    "1er prix individuel — Concours d'éloquence lycée",
+    "Participation — Fleur d'éloquence"
   ],
   "contact": {
     "email": "anaisferreira43@gmail.com",
-    "linkedin": "www.linkedin.com/in/anaïs-ferreira-18b204297",
+    "linkedin": "www.linkedin.com/in/anais-ferreira-18b204297",
     "phone": "+33 7 68 67 75 77"
   }
 }
-
-
-
-
-
-
-
