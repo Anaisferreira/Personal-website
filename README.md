@@ -30,5 +30,5 @@ Ce site sert de **vitrine interactive** de mon profil, permettant aux visiteurs 
 
 ---
 
-🔗 Pour toute question ou collaboration, n’hésitez pas à me contacter via [email](mailto:anaisferreira43@gmail.com) ou [LinkedIn](https://www.linkedin.com/in/anaïs-ferreira-18b204297/).
+🔗 Pour toute question ou collaboration, n’hésitez pas à me contacter via [email](mailto:anais.ferreira@gmail.com) ou [LinkedIn](https://www.linkedin.com/in/anaisferreira/).
 
