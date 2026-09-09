@@ -1,58 +1,179 @@
 {
   "name": "Anaïs Ferreira",
-  "title": "Étudiante en Ingénierie Digitale et Management (UTC/EDHEC)",
-  "bio": "Étudiante en double diplôme à l'UTC et l'EDHEC, passionnée par la finance, la data et l'innovation. J'ai une expérience solide en gestion de projets, communication digitale et entrepreneuriat, avec un fort esprit analytique et entrepreneurial.",
-  "about": "Finance, data, gestion de projet et leadership : ce sont les compétences que j'ai cultivées au fil de mon parcours hybride en ingénierie et management. Elles m'ont permis de transformer des idées en projets entrepreneuriaux concrets, de piloter la communication d'une Junior-Entreprise et de représenter des associations patriotiques au niveau national. Curieuse, passionnée et engagée, je mêle rigueur analytique et créativité, en m'inspirant de la mode, du luxe et de l'innovation technologique. Mon objectif ? Transformer des concepts ambitieux en solutions tangibles et impactantes, où l'esthétique rencontre l'efficacité et où la vision devient action.",
+  "title": "Étudiante en Ingénierie Digitale & Management — Data, Finance & Business Analytics (UTC/EDHEC)",
+  "bio": "Étudiante en double diplôme Ingénierie Digitale & Management à l'UTC et à l'EDHEC Business School, avec une spécialisation en Data & Finance. Mon parcours combine analyse de données, finance, business analytics et gestion de projet. Mon expérience en tant que Data Analyst CRM B2C chez Nespresso m'a permis de développer une approche analytique appliquée aux problématiques business et marketing.",
+  "about": "Data, finance et business analysis sont au cœur de mon parcours hybride entre ingénierie et management. À travers mes expériences professionnelles et académiques, j'ai développé des compétences en analyse de données, économétrie, machine learning, reporting, visualisation de données et analyse financière. Mon stage de Data Analyst CRM B2C chez Nespresso m'a permis de travailler sur des données clients, de construire des KPIs et des dashboards et de transformer des analyses quantitatives en recommandations business. En parallèle, ma formation à l'EDHEC me permet de développer une compréhension approfondie de la finance et des problématiques de Corporate & Investment Banking. Mes expériences internationales, notamment à Shanghai University, renforcent également mon ouverture interculturelle et ma capacité à évoluer dans des environnements internationaux.",
   "photo_path": "images/photo_cv.jpg",
+
   "skills": [
     {
-      "category": "Langages de programmation & outils",
-      "technologies": ["Python", "SQL", "R", "HTML", "CSS", "PHP", "Excel", "VBA"],
-      "description": "Analyse de données, développement web et scripts d'automatisation appliqués à des projets réels."
+      "category": "Data Analytics & Business Intelligence",
+      "technologies": [
+        "Python",
+        "SQL",
+        "R",
+        "Excel",
+        "VBA",
+        "Power BI",
+        "Snowflake"
+      ],
+      "description": "Extraction, nettoyage et analyse de données, construction de KPIs, automatisation de reportings et création de dashboards pour soutenir la prise de décision."
     },
     {
-      "category": "Gestion de projets",
-      "technologies": ["Analyse de données", "Business Plan", "Analyse de marché"],
-      "description": "Encadrement d'équipes, suivi de projets, planification et élaboration de stratégies."
+      "category": "Data Science & Econometrics",
+      "technologies": [
+        "pandas",
+        "scikit-learn",
+        "Régression linéaire",
+        "Régression logistique",
+        "Régression quantile",
+        "K-Means",
+        "Tests statistiques",
+        "Analyse de séries temporelles"
+      ],
+      "description": "Modélisation statistique et machine learning appliqués à des problématiques financières, marketing et business."
+    },
+    {
+      "category": "Finance & Corporate Investment Banking",
+      "technologies": [
+        "Corporate Finance",
+        "Fixed Income",
+        "Bonds",
+        "Repo",
+        "Financial Analysis",
+        "Financial Modeling",
+        "Management Control",
+        "Budgeting",
+        "Variance Analysis"
+      ],
+      "description": "Analyse financière, compréhension des instruments de taux et obligataires, mécanismes de financement, modélisation financière et pilotage de la performance."
+    },
+    {
+      "category": "Business & CRM Analytics",
+      "technologies": [
+        "CRM Analytics",
+        "Customer Analysis",
+        "Marketing Analytics",
+        "KPI Monitoring",
+        "Data Visualization",
+        "Business Recommendations"
+      ],
+      "description": "Analyse du comportement client et de la performance commerciale afin d'identifier des tendances et de formuler des recommandations opérationnelles."
+    },
+    {
+      "category": "Gestion de projets & stratégie",
+      "technologies": [
+        "Business Plan",
+        "Analyse de marché",
+        "Business Model Canvas",
+        "Analyse SWOT",
+        "Pitch",
+        "Gestion de projet"
+      ],
+      "description": "Structuration de projets, analyse stratégique, coordination d'équipes et transformation d'idées en recommandations et projets concrets."
+    },
+    {
+      "category": "Développement web",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "PHP"
+      ],
+      "description": "Création et développement d'interfaces et de projets web."
     }
   ],
+
   "projects": [
     {
+      "id": "brent-oil-econometrics",
+      "title": "Econometrics Project — Brent Oil Prices",
+      "description": "Analyse économétrique des rendements journaliers du Brent afin d'étudier leur prévisibilité et les différences de comportement selon les conditions de marché.",
+      "details": "Analyse de plus de 8 000 rendements journaliers entre 1987 et 2020. Estimation de modèles OLS simples et multiples, tests de significativité, analyse de l'hétéroscédasticité et régressions quantiles afin d'étudier les comportements dans les différentes parties de la distribution.",
+      "technologies": [
+        "R",
+        "Econometrics",
+        "OLS",
+        "Quantile Regression",
+        "Time Series",
+        "Statistical Tests",
+        "Data Visualization"
+      ],
+      "location": "EDHEC Business School",
+      "period": "2025",
+      "pdf_link": "pdf/Final_project_brentOil_Anais_Ferreira.pdf"
+    },
+    {
+      "id": "bank-marketing-data-mining",
+      "title": "Data Mining & Machine Learning — Bank Marketing",
+      "description": "Projet de Data Mining et Machine Learning portant sur la prédiction de la souscription à un dépôt bancaire et la segmentation de clients.",
+      "details": "Analyse d'un dataset bancaire de plus de 40 000 observations. Réalisation d'une analyse exploratoire, preprocessing des variables numériques et catégorielles, classification par régression logistique, validation croisée et segmentation client par K-Means.",
+      "technologies": [
+        "Python",
+        "pandas",
+        "scikit-learn",
+        "Logistic Regression",
+        "K-Means",
+        "Cross-validation",
+        "ROC AUC",
+        "Data Visualization"
+      ],
+      "location": "EDHEC Business School",
+      "period": "2025",
+      "pdf_link": "pdf/Data_Mining_project_Anaïs_Ferreira.pdf"
+    },
+    {
       "id": "smart-insoles",
-      "title": "Startup project — Smart adaptive insoles",
+      "title": "Startup project — Smart Adaptive Insoles",
       "description": "Projet entrepreneurial développé dans le cadre du programme Les Entrep' : conception de semelles intelligentes auto-adaptatives équipées de capteurs de pression.",
-      "details": "Étude de marché (100+ réponses), modélisation business, prototype, présentation devant jury d'entrepreneurs et d'académiques.",
-      "technologies": ["Business Model Canvas", "Étude de marché", "Pitch"],
+      "details": "Étude de marché auprès de plus de 100 répondants, modélisation du business model, développement d'un prototype et présentation devant un jury d'entrepreneurs et d'académiques.",
+      "technologies": [
+        "Business Model Canvas",
+        "Étude de marché",
+        "Pitch"
+      ],
       "location": "Compiègne",
       "period": "2023-2024",
       "pdf_link": "pdf/entrep.pdf"
     },
     {
-      "id": "Curtain X",
-      "title": "Startup project — Smart Curtain",
-      "description": "Projet entrepreneurial développé dans le cadre du programme d'innovation à l'université de Shanghai : conception de rideaux intelligents auto-adaptatifs équipés de capteurs de lumière et température.",
-      "details": "Modélisation business, prototype, présentation devant jury d'entrepreneurs.",
-      "technologies": ["Business Model Canvas", "Étude de marché", "Pitch"],
-      "location": "Shanghai",
+      "id": "curtain-x",
+      "title": "Startup Project — Smart Curtain",
+      "description": "Projet entrepreneurial développé dans le cadre d'un programme d'innovation à Shanghai University : conception de rideaux intelligents auto-adaptatifs équipés de capteurs de lumière et de température.",
+      "details": "Conception du concept, modélisation du business model, réalisation d'un prototype et présentation devant un jury d'entrepreneurs.",
+      "technologies": [
+        "Business Model Canvas",
+        "Innovation",
+        "Étude de marché",
+        "Pitch"
+      ],
+      "location": "Shanghai, Chine",
       "period": "2025",
       "pdf_link": "pdf/Curtain_X.pdf"
     },
     {
-      "id": "Mémoire",
+      "id": "memoire",
       "title": "Transmission des mémoires traumatisantes",
-      "description": "Mémoire qui traite de la transmission des mémoires traumatisantes entre générations, en se basant sur des récits personnels de la période de dictature au Portugal et du génocide arménien.",
-      "details": "Recueil de témoignages, analyse thématique et rédaction.",
-      "technologies": ["Recherche qualitative", "Analyse thématique", "Rédaction académique"],
+      "description": "Mémoire portant sur la transmission des mémoires traumatisantes entre générations à partir de récits personnels liés à la dictature au Portugal et au génocide arménien.",
+      "details": "Recueil de témoignages, analyse thématique et rédaction académique.",
+      "technologies": [
+        "Recherche qualitative",
+        "Analyse thématique",
+        "Rédaction académique"
+      ],
       "location": "Compiègne",
       "period": "2023",
       "pdf_link": "pdf/transmission_memoires_traumatisantes.pdf"
     },
     {
-      "id": "Communication BIDM",
-      "title": "Proposition de stratégie de communication digitale et charte graphique — BIDM",
-      "description": "Elaboration d'une stratégie de communication digitale et d'une charte graphique pour le Bachelor Ingénierie Digitale et Management (BIDM), visant à renforcer sa présence en ligne et à améliorer son image de marque.",
-      "details": "Analyse de la présence actuelle, définition des objectifs, création de contenu visuel et rédactionnel.",
-      "technologies": ["Stratégie digitale", "Marketing de contenu", "Design graphique"],
+      "id": "communication-bidm",
+      "title": "Stratégie de communication digitale & charte graphique — BIDM",
+      "description": "Élaboration d'une stratégie de communication digitale et d'une charte graphique pour le Bachelor Ingénierie Digitale et Management afin de renforcer sa présence en ligne et son image de marque.",
+      "details": "Analyse de la présence actuelle, définition des objectifs, création de contenus visuels et rédactionnels.",
+      "technologies": [
+        "Stratégie digitale",
+        "Marketing de contenu",
+        "Design graphique"
+      ],
       "location": "Compiègne",
       "period": "2024",
       "pdf_links": [
@@ -61,11 +182,15 @@
       ]
     },
     {
-      "id": "Analyse de marché de la pâte à tartiner",
+      "id": "analyse-marche-pate-tartiner",
       "title": "Analyse de marché de la pâte à tartiner",
-      "description": "Analyse de marché de la pâte à tartiner, incluant étude de la concurrence, analyse SWOT et recommandations stratégiques.",
-      "details": "Recherche documentaire, analyse de données et rédaction d'un rapport.",
-      "technologies": ["Analyse de marché", "Analyse SWOT", "Rédaction de rapport"],
+      "description": "Analyse du marché de la pâte à tartiner incluant étude concurrentielle, analyse SWOT et recommandations stratégiques.",
+      "details": "Recherche documentaire, analyse de données et rédaction d'un rapport stratégique.",
+      "technologies": [
+        "Analyse de marché",
+        "Analyse SWOT",
+        "Rédaction de rapport"
+      ],
       "location": "Compiègne",
       "period": "2024",
       "pdf_links": [
@@ -74,30 +199,66 @@
       ]
     }
   ],
+
   "experience": [
+    {
+      "title": "Data Analyst CRM B2C — Internship",
+      "company": "Nespresso France — Nestlé",
+      "location": "Issy-les-Moulineaux, France",
+      "period": "Février – Juillet 2026",
+      "description": "Analyse des données CRM et du comportement client afin d'accompagner les équipes Marketing et Business dans le pilotage de la performance B2C.",
+      "achievements": [
+        "Extraction et analyse de données clients issues de Snowflake",
+        "Nettoyage, validation et fiabilisation des datasets utilisés pour les analyses CRM",
+        "Construction et suivi de KPIs liés aux offres commerciales et campagnes marketing",
+        "Création et automatisation de reportings et dashboards sous Excel et Power BI",
+        "Réalisation d'analyses ad hoc sur le comportement et la performance des clients",
+        "Synthèse des résultats et formulation de recommandations à destination des équipes CRM, Marketing et Business Analytics"
+      ],
+      "technologies": [
+        "Snowflake",
+        "Excel",
+        "Power BI",
+        "CRM Analytics",
+        "Data Analysis",
+        "KPI Monitoring",
+        "Business Analysis"
+      ],
+      "photo_path": "images/nespresso_logo.png"
+    },
     {
       "title": "Community Manager",
       "company": "Junior UTC",
       "location": "Compiègne, France",
       "period": "Septembre 2024 – Février 2025",
-      "description": "Pilotage de la communication digitale de la Junior-Entreprise : stratégie, création de contenu, suivi des performances.",
+      "description": "Pilotage de la communication digitale de la Junior-Entreprise : stratégie, création de contenu et suivi des performances.",
       "achievements": [
-        "15 publications Instagram cumulant plus de 70 000 vues (+45% de reach en 5 mois)",
+        "15 publications Instagram cumulant plus de 70 000 vues et +45% de reach en 5 mois",
         "15 publications LinkedIn générant 25 000 impressions",
         "Organisation de campagnes de communication ciblées pour recruter et fidéliser les membres"
       ],
-      "technologies": ["Stratégie digitale", "Marketing de contenu", "Analyse de données"],
+      "technologies": [
+        "Stratégie digitale",
+        "Marketing de contenu",
+        "Analyse de données"
+      ],
       "photo_path": "images/jutc_logo.jpg"
     },
     {
-      "title": "Internship — Reception, Accounting, Finance",
+      "title": "Internship — Reception, Accounting & Finance",
       "company": "Mairie de Villers-Sous-Saint-Leu",
-      "location": "France",
+      "location": "Villers-Sous-Saint-Leu, France",
       "period": "2025",
-      "description": "Accueil du public, participation à des missions administratives et financières.",
+      "description": "Accueil du public et participation à des missions administratives, comptables et financières.",
       "achievements": [
-        "Accueil de 100+ usagers par semaine",
-        "Contribution à la gestion d'un budget municipal de 2M+ €"
+        "Accueil de plus de 100 usagers par semaine",
+        "Contribution à la gestion et au suivi d'un budget municipal de plus de 2 M€"
+      ],
+      "technologies": [
+        "Comptabilité",
+        "Analyse financière",
+        "Gestion budgétaire",
+        "Excel"
       ]
     },
     {
@@ -105,16 +266,21 @@
       "company": "Imerys",
       "location": "Villers-Sous-Saint-Leu, France",
       "period": "Janvier – Février 2024",
-      "description": "Découverte du monde industriel et participation aux activités de production.",
+      "description": "Découverte du fonctionnement d'un environnement industriel et participation aux activités de production.",
       "achievements": [
         "Contrôle qualité et conditionnement de 50 000 produits par semaine",
         "Participation à la maintenance des machines de production"
       ],
-      "technologies": ["Production industrielle", "Contrôle qualité", "Travail en équipe"],
+      "technologies": [
+        "Production industrielle",
+        "Contrôle qualité",
+        "Travail en équipe"
+      ],
       "photo_path": "images/imerys.jpg",
       "pdf_link": "pdf/stage_imerys.pdf"
     }
   ],
+
   "engagements": [
     {
       "role": "Porte-drapeau",
@@ -134,26 +300,38 @@
       "photo_path": "images/cdj.jpg"
     }
   ],
+
   "education": [
     {
-      "title": "Double diplôme Ingénierie digitale & Management",
-      "company": "EDHEC Business School & UTC",
-      "location": "Lille & Compiègne",
+      "title": "Double diplôme Ingénierie Digitale & Management — Data & Finance",
+      "company": "EDHEC Business School & Université de Technologie de Compiègne",
+      "location": "Lille & Compiègne, France",
       "period": "2023 – 2027",
-      "description": "Parcours hybride numérique / management. Mobilité académique : semestre à Shanghai (UTSEUS).",
+      "description": "Formation pluridisciplinaire combinant ingénierie numérique, data science, finance et management. Enseignements en économétrie, data mining & machine learning, finance d'entreprise, Fixed Income, Bonds & Repo, modélisation financière et management control.",
       "photo_paths": [
         "images/logo_utc.png",
         "images/logo_edhec.png"
       ]
     },
     {
+      "title": "Academic Exchange — Digital Engineering & Innovation",
+      "company": "Shanghai University — UTSEUS",
+      "location": "Shanghai, Chine",
+      "period": "Février – Juillet 2025",
+      "description": "Semestre académique international à Shanghai dans le cadre du double diplôme UTC/EDHEC. Participation à des enseignements et projets mêlant innovation, ingénierie digitale et entrepreneuriat, dont le projet Smart Curtain.",
+      "photo_paths": [
+        "images/logo_shanghai_university.png"
+      ]
+    },
+    {
       "title": "Baccalauréat Franco-Allemand (Abibac)",
       "company": "Lycée Félix Faure",
-      "location": "Beauvais",
+      "location": "Beauvais, France",
       "period": "2020 – 2023",
-      "description": "Mention Bien (15,7) / Abitur Mention Très Bien. Spécialités mathématiques, physique et allemand."
+      "description": "Mention Bien (15,7/20) et Abitur Mention Très Bien. Spécialités mathématiques, physique et allemand."
     }
   ],
+
   "certifications": [
     {
       "name": "Sustainability in the Age of AI - Alibaba Cloud",
@@ -164,7 +342,7 @@
       "photo_path": "images/AI_driven_sustainability_for_the_sports_industry.jpg"
     },
     {
-      "name": "Using generative AI Ethically and Responsibly - Alibaba Cloud",
+      "name": "Using Generative AI Ethically and Responsibly - Alibaba Cloud",
       "photo_path": "images/using_generative_ai_ethically_and_responsibly.jpg"
     },
     {
@@ -176,11 +354,22 @@
       "pdf_link": "pdf/pix.pdf"
     }
   ],
+
   "languages": [
-    { "language": "Français", "level": "Natif" },
-    { "language": "Anglais", "level": "Courant" },
-    { "language": "Allemand", "level": "Courant (séjour de 3 mois - programme Brigitte Sauzay)" }
+    {
+      "language": "Français",
+      "level": "Natif"
+    },
+    {
+      "language": "Anglais",
+      "level": "Courant"
+    },
+    {
+      "language": "Allemand",
+      "level": "Courant — séjour de 3 mois dans le cadre du programme Brigitte Sauzay"
+    }
   ],
+
   "hobbies": [
     "Entrepreneuriat",
     "Voyages interculturels",
@@ -188,17 +377,17 @@
     "Mode & luxe",
     "Engagement citoyen"
   ],
+
   "awards": [
     "1er prix académique — Olympiades de mathématiques",
     "1er prix par équipe — Débat citoyen en allemand",
     "1er prix individuel — Concours d'éloquence lycée",
     "Participation — Fleur d'éloquence"
   ],
+
   "contact": {
     "email": "anais.ferreira@edhec.com",
     "linkedin": "https://www.linkedin.com/in/anaisferreira/",
     "phone": "+33 7 68 67 75 77"
   }
 }
-
-
