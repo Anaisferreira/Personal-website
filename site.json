@@ -333,6 +333,10 @@
   ],
 
   "certifications": [
+     {
+      "name": "Inside LVMH",
+      "photo_path": "pdf/INSIDE_LVMH_CERTIFICATE.pdf"
+    },
     {
       "name": "Sustainability in the Age of AI - Alibaba Cloud",
       "photo_path": "images/sustainability_in_the_age_of_AI.jpg"
