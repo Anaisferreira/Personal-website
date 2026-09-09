@@ -7,18 +7,19 @@
 
   "skills": [
     {
-      "category": "Data Analytics & Business Intelligence",
-      "technologies": [
-        "Python",
-        "SQL",
-        "R",
-        "Excel",
-        "VBA",
-        "Power BI",
-        "Snowflake"
-      ],
-      "description": "Extraction, nettoyage et analyse de données, construction de KPIs, automatisation de reportings et création de dashboards pour soutenir la prise de décision."
-    },
+  "category": "Data Analytics & Business Intelligence",
+  "technologies": [
+    "Python",
+    "SQL",
+    "R",
+    "Excel",
+    "Power BI",
+    "Snowflake",
+    "Relational Databases",
+    "Data Modeling"
+  ],
+  "description": "Extraction, structuration, nettoyage et analyse de données, conception de bases de données, construction de KPIs, automatisation de reportings et création de dashboards pour soutenir la prise de décision."
+},
     {
       "category": "Data Science & Econometrics",
       "technologies": [
@@ -102,6 +103,24 @@
       "period": "2025",
       "pdf_link": "pdf/Final_project_brentOil_Anais_Ferreira.pdf"
     },
+
+
+    {
+  "id": "database-project",
+  "title": "Database Project — Data Management & SQL",
+  "description": "Projet académique de conception et d'implémentation d'une base de données relationnelle réalisé à l'Université de Technologie de Compiègne.",
+  "details": "Conception du modèle de données, structuration du schéma relationnel, création et manipulation de la base de données et développement de requêtes SQL. Le projet met en pratique les différentes étapes de gestion des données, de la modélisation à l'exploitation de la base.",
+  "technologies": [
+    "SQL",
+    "Relational Databases",
+    "Database Design",
+    "Data Modeling",
+    "Data Management"
+  ],
+  "location": "Université de Technologie de Compiègne",
+  "period": "2025",
+  "github_link": "https://github.com/Anaisferreira/Data_Base_Management.git"
+},
     {
       "id": "bank-marketing-data-mining",
       "title": "Data Mining & Machine Learning — Bank Marketing",
