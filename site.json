@@ -1,25 +1,25 @@
+
 {
   "name": "Anaïs Ferreira",
   "title": "Étudiante en Ingénierie Digitale & Management — Data, Finance & Business Analytics (UTC/EDHEC)",
   "bio": "Étudiante en double diplôme Ingénierie Digitale & Management à l'UTC et à l'EDHEC Business School, avec une spécialisation en Data & Finance. Mon parcours combine analyse de données, finance, business analytics et gestion de projet. Mon expérience en tant que Data Analyst CRM B2C chez Nespresso m'a permis de développer une approche analytique appliquée aux problématiques business et marketing.",
   "about": "Data, finance et business analysis sont au cœur de mon parcours hybride entre ingénierie et management. À travers mes expériences professionnelles et académiques, j'ai développé des compétences en analyse de données, économétrie, machine learning, reporting, visualisation de données et analyse financière. Mon stage de Data Analyst CRM B2C chez Nespresso m'a permis de travailler sur des données clients, de construire des KPIs et des dashboards et de transformer des analyses quantitatives en recommandations business. En parallèle, ma formation à l'EDHEC me permet de développer une compréhension approfondie de la finance et des problématiques de Corporate & Investment Banking. Mes expériences internationales, notamment à Shanghai University, renforcent également mon ouverture interculturelle et ma capacité à évoluer dans des environnements internationaux.",
   "photo_path": "images/photo_cv.jpg",
-
   "skills": [
     {
-  "category": "Data Analytics & Business Intelligence",
-  "technologies": [
-    "Python",
-    "SQL",
-    "R",
-    "Excel",
-    "Power BI",
-    "Snowflake",
-    "Relational Databases",
-    "Data Modeling"
-  ],
-  "description": "Extraction, structuration, nettoyage et analyse de données, conception de bases de données, construction de KPIs, automatisation de reportings et création de dashboards pour soutenir la prise de décision."
-},
+      "category": "Data Analytics & Business Intelligence",
+      "technologies": [
+        "Python",
+        "SQL",
+        "R",
+        "Excel",
+        "Power BI",
+        "Snowflake",
+        "Relational Databases",
+        "Data Modeling"
+      ],
+      "description": "Extraction, structuration, nettoyage et analyse de données, conception de bases de données, construction de KPIs, automatisation de reportings et création de dashboards pour soutenir la prise de décision."
+    },
     {
       "category": "Data Science & Econometrics",
       "technologies": [
@@ -83,7 +83,6 @@
       "description": "Création et développement d'interfaces et de projets web."
     }
   ],
-
   "projects": [
     {
       "id": "brent-oil-econometrics",
@@ -103,24 +102,22 @@
       "period": "2025",
       "pdf_link": "pdf/Final_project_brentOil_Anais_Ferreira.pdf"
     },
-
-
     {
-  "id": "database-project",
-  "title": "Database Project — Data Management & SQL",
-  "description": "Projet académique de conception et d'implémentation d'une base de données relationnelle réalisé à l'Université de Technologie de Compiègne.",
-  "details": "Conception du modèle de données, structuration du schéma relationnel, création et manipulation de la base de données et développement de requêtes SQL. Le projet met en pratique les différentes étapes de gestion des données, de la modélisation à l'exploitation de la base.",
-  "technologies": [
-    "SQL",
-    "Relational Databases",
-    "Database Design",
-    "Data Modeling",
-    "Data Management"
-  ],
-  "location": "Université de Technologie de Compiègne",
-  "period": "2025",
-  "github_link": "https://github.com/Anaisferreira/Data_Base_Management.git"
-},
+      "id": "database-project",
+      "title": "Database Project — Data Management & SQL",
+      "description": "Projet académique de conception et d'implémentation d'une base de données relationnelle réalisé à l'Université de Technologie de Compiègne.",
+      "details": "Conception du modèle de données, structuration du schéma relationnel, création et manipulation de la base de données et développement de requêtes SQL. Le projet met en pratique les différentes étapes de gestion des données, de la modélisation à l'exploitation de la base.",
+      "technologies": [
+        "SQL",
+        "Relational Databases",
+        "Database Design",
+        "Data Modeling",
+        "Data Management"
+      ],
+      "location": "Université de Technologie de Compiègne",
+      "period": "2025",
+      "github_link": "https://github.com/Anaisferreira/Data_Base_Management.git"
+    },
     {
       "id": "bank-marketing-data-mining",
       "title": "Data Mining & Machine Learning — Bank Marketing",
@@ -142,7 +139,7 @@
     },
     {
       "id": "smart-insoles",
-      "title": "Startup project — Smart Adaptive Insoles",
+      "title": "Startup Project — Smart Adaptive Insoles",
       "description": "Projet entrepreneurial développé dans le cadre du programme Les Entrep' : conception de semelles intelligentes auto-adaptatives équipées de capteurs de pression.",
       "details": "Étude de marché auprès de plus de 100 répondants, modélisation du business model, développement d'un prototype et présentation devant un jury d'entrepreneurs et d'académiques.",
       "technologies": [
@@ -218,7 +215,6 @@
       ]
     }
   ],
-
   "experience": [
     {
       "title": "Data Analyst CRM B2C — Internship",
@@ -299,7 +295,6 @@
       "pdf_link": "pdf/stage_imerys.pdf"
     }
   ],
-
   "engagements": [
     {
       "role": "Porte-drapeau",
@@ -319,7 +314,6 @@
       "photo_path": "images/cdj.jpg"
     }
   ],
-
   "education": [
     {
       "title": "Double diplôme Ingénierie Digitale & Management — Data & Finance",
@@ -337,14 +331,10 @@
       "company": "Shanghai University — UTSEUS",
       "location": "Shanghai, Chine",
       "period": "Février – Juillet 2025",
-      "description": "Semestre académique international à Shanghai dans le cadre du double diplôme UTC/EDHEC. Participation à des enseignements et projets mêlant innovation, ingénierie digitale et entrepreneuriat, dont le projet Smart Curtain.",
+      "description": "Semestre académique international à Shanghai dans le cadre du double diplôme UTC/EDHEC. Participation à des enseignements et projets mêlant innovation, ingénierie digitale et entrepreneuriat, dont le projet Smart Curtain. Animatrice d'un concours d'innovation en anglais à Shanghai University.",
       "photo_paths": [
-        "images/utseus_logo.jgp"
-      ],
-      "description": "Animatrice d'un concours d'Innovation en anglais à l'université de Shanghai",
-
-      "photo_paths": [
-        "images/female_host.jgp"
+        "images/utseus_logo.jpg",
+        "images/female_host.jpg"
       ]
     },
     {
@@ -355,9 +345,8 @@
       "description": "Mention Bien (15,7/20) et Abitur Mention Très Bien. Spécialités mathématiques, physique et allemand."
     }
   ],
-
   "certifications": [
-     {
+    {
       "name": "Inside LVMH",
       "pdf_link": "pdf/INSIDE_LVMH_CERTIFICATE.pdf"
     },
@@ -382,7 +371,6 @@
       "pdf_link": "pdf/pix.pdf"
     }
   ],
-
   "languages": [
     {
       "language": "Français",
@@ -397,7 +385,6 @@
       "level": "Courant — séjour de 3 mois dans le cadre du programme Brigitte Sauzay"
     }
   ],
-
   "hobbies": [
     "Entrepreneuriat",
     "Voyages interculturels",
@@ -405,14 +392,12 @@
     "Mode & luxe",
     "Engagement citoyen"
   ],
-
   "awards": [
     "1er prix académique — Olympiades de mathématiques",
     "1er prix par équipe — Débat citoyen en allemand",
     "1er prix individuel — Concours d'éloquence lycée",
     "Participation — Fleur d'éloquence"
   ],
-
   "contact": {
     "email": "anais.ferreira@edhec.com",
     "linkedin": "https://www.linkedin.com/in/anaisferreira/",
