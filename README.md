@@ -13,10 +13,21 @@ Je transforme des idées ambitieuses en **projets concrets et impactants**, dans
 
 ## Contenu du site
 
-- **Index.html** : page principale du site  
-- **site.json** : données personnelles et projets structurés  
+- **index.html** : page principale du site (design responsive, sélecteur FR / EN)  
+- **site.json** : contenu en français (profil, projets, expériences…)  
+- **site.en.json** : contenu en anglais, même structure que `site.json`  
+- **images/projects/** : visuels affichés dans les fiches projets  
 - **images/** : photos et visuels associés à mon parcours  
 - **pdf/** : rapports, projets et certifications en format PDF  
+
+## Langues
+
+Le site s'affiche en français ou en anglais selon la langue du navigateur. Le bouton en haut à droite permet de changer, et un lien direct est possible :
+
+- Français : `https://anaisferreira.github.io/Personal-website/?lang=fr`
+- Anglais : `https://anaisferreira.github.io/Personal-website/?lang=en`
+
+Pour modifier un texte, éditer `site.json` (FR) **et** `site.en.json` (EN).
 
 ## Technologies utilisées
 
