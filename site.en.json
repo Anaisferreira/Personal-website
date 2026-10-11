@@ -1,0 +1,346 @@
+{
+  "lang": "en",
+  "name": "Anaïs Ferreira",
+  "title": "Digital Engineering & Management student — Data, Finance & Business Analytics (UTC/EDHEC)",
+  "headline": "I turn data into business decisions.",
+  "bio": "Dual-degree student in Digital Engineering & Management at UTC and EDHEC Business School, majoring in Data & Finance. After six months as a CRM Data Analyst at Nespresso, I want to put data analysis to work for finance and strategy.",
+  "about": "Data, finance and business analysis sit at the heart of my hybrid engineering and management background. Through academic and professional work, I have built skills in data analysis, econometrics, machine learning, reporting, data visualisation and financial analysis. My B2C CRM Data Analyst internship at Nespresso had me working on customer data, building KPIs and dashboards, and turning quantitative analysis into business recommendations. Alongside this, my EDHEC studies are giving me a deep understanding of finance and of Corporate & Investment Banking. A semester at Shanghai University sharpened my intercultural awareness and my ability to work in international settings.",
+  "photo_path": "images/photo_cv.jpg",
+  "facts": [
+    { "value": "6 months", "label": "as CRM Data Analyst at Nespresso" },
+    { "value": "3 countries", "label": "France, Germany, China" },
+    { "value": "3 languages", "label": "French, English, German" }
+  ],
+  "ui": {
+    "nav": {
+      "projects": "Projects",
+      "experience": "Experience",
+      "education": "Education",
+      "skills": "Skills",
+      "more": "Involvement",
+      "contact": "Contact"
+    },
+    "switch_label": "Français",
+    "switch_aria": "Lire ce site en français",
+    "cta_projects": "See my projects",
+    "cta_linkedin": "Connect on LinkedIn",
+    "about_title": "About",
+    "projects_title": "Projects",
+    "projects_intro": "A selection of academic and entrepreneurial projects, with the full reports available to read.",
+    "filter_all": "All",
+    "categories": {
+      "data": "Data, AI & Finance",
+      "entrepreneurship": "Entrepreneurship",
+      "strategy": "Strategy & communication"
+    },
+    "role": "My role",
+    "team": "Team",
+    "tools": "Tools",
+    "view_report": "Read the report (PDF)",
+    "view_pdf": "View PDF",
+    "view_code": "See the code on GitHub",
+    "experience_title": "Experience",
+    "education_title": "Education",
+    "skills_title": "Skills",
+    "certifications_title": "Certifications",
+    "engagements_title": "Involvement",
+    "languages_title": "Languages",
+    "awards_title": "Awards",
+    "hobbies_title": "Interests",
+    "contact_title": "Let's work together",
+    "contact_text": "I'm open to opportunities in data, finance and strategy. The quickest way to reach me is by email or on LinkedIn.",
+    "email_label": "Email",
+    "phone_label": "Phone",
+    "linkedin_label": "LinkedIn",
+    "footer": "Personal website of Anaïs Ferreira",
+    "load_error": "The site content couldn't be loaded. Reload the page; if it still fails, email me at anais.ferreira@edhec.com."
+  },
+  "skills": [
+    {
+      "category": "Data Analytics & Business Intelligence",
+      "technologies": ["Python", "SQL", "R", "Excel", "Power BI", "Snowflake", "PostgreSQL", "Data modelling"],
+      "description": "Extracting, structuring, cleaning and analysing data, designing databases, building KPIs, automating reports and creating dashboards that support decision-making."
+    },
+    {
+      "category": "Data Science & Econometrics",
+      "technologies": ["pandas", "scikit-learn", "Linear regression", "Logistic regression", "Quantile regression", "K-Means", "Statistical tests", "Time series"],
+      "description": "Statistical modelling and machine learning applied to finance, marketing and business questions."
+    },
+    {
+      "category": "Finance & Corporate Investment Banking",
+      "technologies": ["Corporate finance", "Fixed income", "Bonds", "Repo", "Financial analysis", "Financial modelling", "Management control", "Budgeting", "Variance analysis"],
+      "description": "Financial analysis, fixed-income and bond instruments, financing mechanisms, financial modelling and performance management."
+    },
+    {
+      "category": "Business & CRM Analytics",
+      "technologies": ["CRM analytics", "Customer analysis", "Marketing analytics", "KPI monitoring", "Data visualisation", "Business recommendations"],
+      "description": "Analysing customer behaviour and commercial performance to spot trends and make operational recommendations."
+    },
+    {
+      "category": "Project management & strategy",
+      "technologies": ["Business plan", "Market analysis", "Business Model Canvas", "SWOT analysis", "Pitching", "Project management"],
+      "description": "Structuring projects, strategic analysis, coordinating teams and turning ideas into concrete projects."
+    },
+    {
+      "category": "Web development",
+      "technologies": ["HTML", "CSS", "JavaScript", "PHP", "Python (Tkinter)"],
+      "description": "Building interfaces and web projects, including this website."
+    }
+  ],
+  "projects": [
+    {
+      "id": "bank-marketing-data-mining",
+      "category": "data",
+      "title": "Predicting and segmenting a bank's customers",
+      "subtitle": "Data Mining & Machine Learning — Bank Marketing",
+      "location": "EDHEC Business School",
+      "period": "2025",
+      "description": "Out of 40,000+ customers, identify those who will subscribe to a term deposit, despite highly imbalanced classes.",
+      "details": "Exploratory analysis, preprocessing of numerical and categorical variables, logistic regression validated with cross-validation, then K-Means segmentation (elbow method, k = 3). Outcome: a high-propensity segment with a 63% subscription rate to target first, and a 5% segment to leave out of campaigns.",
+      "highlight": { "value": "0.94", "label": "ROC AUC on the test set" },
+      "technologies": ["Python", "pandas", "scikit-learn", "Logistic regression", "K-Means", "Cross-validation"],
+      "photo_path": "images/projects/bank-marketing-clusters.jpg",
+      "photo_alt": "Scatter plot of the three customer segments by age and 3-month Euribor rate",
+      "pdf_link": "pdf/Data_Mining_project_Anaïs_Ferreira.pdf"
+    },
+    {
+      "id": "brent-oil-econometrics",
+      "category": "data",
+      "title": "Can Brent oil be predicted day to day?",
+      "subtitle": "Econometrics — Brent oil returns",
+      "location": "EDHEC Business School",
+      "period": "2025",
+      "description": "Does yesterday's return help explain today's, and does that relationship change in the tails of the distribution?",
+      "details": "Daily log-returns from 1987 to 2020, simple and multiple OLS, joint F-test, heteroskedasticity diagnostics and quantile regressions (τ from 0.1 to 0.9) in R. Conclusion: mean predictability is close to zero and the dynamics run mostly through volatility, which points towards GARCH models.",
+      "highlight": { "value": "8,357", "label": "daily returns analysed" },
+      "technologies": ["R", "OLS", "Quantile regression", "Statistical tests", "Time series"],
+      "photo_path": "images/projects/brent-price.jpg",
+      "photo_alt": "Daily Brent price in US dollars per barrel, 1987 to 2020",
+      "pdf_link": "pdf/Final_project_brentOil_Anais_Ferreira.pdf"
+    },
+    {
+      "id": "database-project",
+      "category": "data",
+      "title": "Designing a database from scratch",
+      "subtitle": "Community Management System — PostgreSQL & Python",
+      "location": "Université de Technologie de Compiègne",
+      "period": "2025",
+      "team": "Team of 4",
+      "description": "A platform connecting people and communities: memberships, messaging, skills, shared services and exclusion votes.",
+      "details": "From conceptual model to logical schema: 12 PostgreSQL tables, Entity → Individual / Community inheritance, integrity enforced through keys, UNIQUE and CHECK constraints. Business views, a recursive query that rebuilds message threads, GPS distance between members and safe transactions. Two Python interfaces (admin and user) and a test-data generator.",
+      "highlight": { "value": "12", "label": "linked tables" },
+      "technologies": ["PostgreSQL", "SQL", "Python", "psycopg2", "Tkinter", "Data modelling"],
+      "github_link": "https://github.com/Anaisferreira/Data_Base_Management"
+    },
+    {
+      "id": "curtain-x",
+      "category": "entrepreneurship",
+      "title": "Curtain X: smart curtains that cut energy bills",
+      "subtitle": "Start-up — Shanghai University innovation programme",
+      "location": "Shanghai, China",
+      "period": "2025",
+      "team": "Team of 5",
+      "role": "Business plan",
+      "description": "Double-sided insulating curtains driven by light and heat sensors, an app and an AI that learns the user's habits.",
+      "details": "I built the business plan: market sizing, business model (e-commerce and retail), five-year projected income statement and funding needs. Final pitch delivered in English to a jury of entrepreneurs.",
+      "highlight": { "value": "€1M", "label": "funding round pitched to the jury" },
+      "technologies": ["Business plan", "Financial projections", "Business Model Canvas", "Pitching"],
+      "photo_path": "images/projects/curtain-x-solution.jpg",
+      "photo_alt": "Pitch slide showing the solution: sliding bar, heat detector, insulating face",
+      "pdf_link": "pdf/Curtain_X.pdf"
+    },
+    {
+      "id": "smart-insoles",
+      "category": "entrepreneurship",
+      "title": "Smart insoles that adapt to the way you walk",
+      "subtitle": "Start-up — Les Entrep' programme",
+      "location": "Compiègne",
+      "period": "2023–2024",
+      "description": "Insoles fitted with pressure sensors that adapt to each person's foot shape and gait.",
+      "details": "Market survey of 100+ respondents, plaster foot casts, 3D modelling of the insole, physical prototypes, then a business model pitched to a jury of entrepreneurs and academics. Awarded the Les Entrep' certificate.",
+      "highlight": { "value": "100+", "label": "market survey respondents" },
+      "technologies": ["Market research", "3D modelling", "Prototyping", "Business Model Canvas", "Pitching"],
+      "photo_paths": ["images/projects/insoles-3d.jpg", "images/projects/insoles-prototypes.jpg"],
+      "photo_alts": ["3D model of the insole under a foot model", "Plaster foot casts and first insole prototypes"],
+      "pdf_link": "pdf/entrep.pdf",
+      "pdf_label": "View the certificate (PDF, in French)"
+    },
+    {
+      "id": "communication-bidm",
+      "category": "strategy",
+      "title": "Building a brand for the EDHEC × UTC Bachelor",
+      "subtitle": "Digital communication strategy & brand guidelines",
+      "location": "Compiègne",
+      "period": "2024",
+      "description": "The programme wants to open two classes per year group, but has little visibility with high-school students and companies alike.",
+      "details": "Recurring series on LinkedIn and Instagram, the #DoubleBachelorUTCEDHEC hashtag, a joint student-school committee to approve content, and complete brand guidelines: typefaces, colours and logo.",
+      "technologies": ["Digital strategy", "Content marketing", "Graphic design"],
+      "photo_paths": ["images/projects/bidm-communication.jpg", "images/projects/bidm-charte.jpg"],
+      "photo_alts": ["Cover of the Bachelor IDM communication strategy", "Colour page of the brand guidelines"],
+      "pdf_links": ["pdf/communication_bidm.pdf", "pdf/charte_graphique.pdf"],
+      "pdf_labels": ["Communication strategy (PDF, in French)", "Brand guidelines (PDF, in French)"]
+    },
+    {
+      "id": "analyse-marche-pate-tartiner",
+      "category": "strategy",
+      "title": "Decoding the chocolate-spread market",
+      "subtitle": "Marketing mix & market analysis",
+      "location": "Compiègne",
+      "period": "2024",
+      "team": "Team of 5",
+      "description": "A study of the market leader's marketing mix: segmentation, targeting, product, price and distribution.",
+      "details": "Completed with a competitive analysis, a SWOT matrix and strategic recommendations.",
+      "technologies": ["Marketing mix", "Competitive analysis", "SWOT", "Report writing"],
+      "photo_path": "images/projects/marketing-mix.jpg",
+      "photo_alt": "Cover of the marketing mix presentation",
+      "pdf_links": ["pdf/marché_pate_tartiner.pdf", "pdf/marketing_mix.pdf"],
+      "pdf_labels": ["Market analysis (PDF, in French)", "Marketing mix (PDF, in French)"]
+    },
+    {
+      "id": "memoire",
+      "category": "strategy",
+      "title": "How traumatic memories are passed down",
+      "subtitle": "Research thesis",
+      "location": "Compiègne",
+      "period": "2023",
+      "team": "Team of 3",
+      "description": "How is trauma passed from one generation to the next? A study based on accounts of the Portuguese dictatorship and the Armenian genocide.",
+      "details": "Collection of family testimonies, thematic analysis and academic writing.",
+      "highlight": { "value": "33", "label": "pages of research" },
+      "technologies": ["Qualitative research", "Interviews", "Thematic analysis", "Academic writing"],
+      "pdf_link": "pdf/transmission_memoires_traumatisantes.pdf",
+      "pdf_label": "Read the thesis (PDF, in French)"
+    }
+  ],
+  "experience": [
+    {
+      "title": "B2C CRM Data Analyst — internship",
+      "company": "Nespresso France — Nestlé",
+      "location": "Issy-les-Moulineaux, France",
+      "period": "February – July 2026",
+      "description": "Analysed CRM data and customer behaviour to help the Marketing and Business teams steer B2C performance.",
+      "achievements": [
+        "Extracted and analysed customer data from Snowflake",
+        "Cleaned, validated and secured the datasets used for CRM analysis",
+        "Built and tracked KPIs for commercial offers and marketing campaigns",
+        "Created and automated reports and dashboards in Excel and Power BI",
+        "Ran ad hoc analyses of customer behaviour and performance",
+        "Summarised findings and made recommendations to the CRM, Marketing and Business Analytics teams"
+      ],
+      "technologies": ["Snowflake", "SQL", "Excel", "Power BI", "CRM analytics", "KPI monitoring"],
+      "photo_path": "images/nespresso_logo.jpg"
+    },
+    {
+      "title": "Community Manager",
+      "company": "Junior UTC",
+      "location": "Compiègne, France",
+      "period": "September 2024 – February 2025",
+      "description": "Ran digital communication for UTC's student consulting firm: strategy, content creation and performance tracking.",
+      "achievements": [
+        "15 Instagram posts with 70,000+ views and +45% reach in 5 months",
+        "15 LinkedIn posts generating 25,000 impressions",
+        "Targeted campaigns to recruit and retain members"
+      ],
+      "technologies": ["Digital strategy", "Content marketing", "Performance analysis"],
+      "photo_path": "images/jutc_logo.jpg"
+    },
+    {
+      "title": "Reception, Accounting & Finance internship",
+      "company": "Villers-Sous-Saint-Leu Town Hall",
+      "location": "Villers-Sous-Saint-Leu, France",
+      "period": "2025",
+      "description": "Front-desk reception and administrative, accounting and finance tasks.",
+      "achievements": [
+        "Welcomed 100+ residents per week",
+        "Helped manage and monitor a municipal budget of over €2M"
+      ],
+      "technologies": ["Accounting", "Budget management", "Excel"]
+    },
+    {
+      "title": "Shop-floor internship",
+      "company": "Imerys",
+      "location": "Villers-Sous-Saint-Leu, France",
+      "period": "January – February 2024",
+      "description": "Hands-on experience of an industrial environment and its production activities.",
+      "achievements": [
+        "Quality control and packaging of 50,000 products per week",
+        "Supported maintenance of production machinery"
+      ],
+      "technologies": ["Industrial production", "Quality control", "Teamwork"],
+      "photo_path": "images/imerys.jpg",
+      "pdf_link": "pdf/stage_imerys.pdf",
+      "pdf_label": "Internship report (PDF, in French)"
+    }
+  ],
+  "engagements": [
+    {
+      "role": "Flag bearer",
+      "organization": "Mémoire et Avenir Citoyen — national remembrance ceremonies",
+      "period": "Since 2017",
+      "photo_path": "images/memoire_avenir_citoyen.jpeg"
+    },
+    {
+      "role": "Student ambassador and class representative",
+      "organization": "Unibuddy UTC/EDHEC",
+      "period": "Since 2024"
+    },
+    {
+      "role": "Vice-president",
+      "organization": "Departmental Youth Council (Conseil Départemental Jeune)",
+      "period": "2017 – 2019",
+      "photo_path": "images/cdj.jpg"
+    }
+  ],
+  "education": [
+    {
+      "title": "Dual degree in Digital Engineering & Management — Data & Finance",
+      "company": "EDHEC Business School & Université de Technologie de Compiègne",
+      "location": "Lille & Compiègne, France",
+      "period": "2023 – 2027",
+      "description": "A multidisciplinary programme combining digital engineering, data science, finance and management: econometrics, data mining & machine learning, corporate finance, fixed income, bonds & repo, financial modelling and management control.",
+      "photo_paths": ["images/logo_edhec.png", "images/logo_utc.png"],
+      "photo_alts": ["EDHEC Business School logo", "UTC logo"]
+    },
+    {
+      "title": "Academic exchange — Digital Engineering & Innovation",
+      "company": "Shanghai University — UTSEUS",
+      "location": "Shanghai, China",
+      "period": "February – July 2025",
+      "description": "International semester as part of the dual degree. Courses and projects combining innovation, digital engineering and entrepreneurship, including the Curtain X project. Hosted an innovation competition in English.",
+      "photo_paths": ["images/female_host.jpg"],
+      "photo_alts": ["Anaïs hosting the innovation competition at Shanghai University"]
+    },
+    {
+      "title": "French-German Baccalaureate (Abibac)",
+      "company": "Lycée Félix Faure",
+      "location": "Beauvais, France",
+      "period": "2020 – 2023",
+      "description": "Graduated with honours (15.7/20) and the German Abitur with highest honours. Majors in mathematics, physics and German."
+    }
+  ],
+  "certifications": [
+    { "name": "Inside LVMH", "pdf_link": "pdf/INSIDE_LVMH_CERTIFICATE.pdf" },
+    { "name": "Sustainability in the Age of AI — Alibaba Cloud", "photo_path": "images/sustainability_in_the_age_of_AI.jpg" },
+    { "name": "AI-driven Sustainability for the Sports Industry — Alibaba Cloud", "photo_path": "images/AI_driven_sustainability_for_the_sports_industry.jpg" },
+    { "name": "Using Generative AI Ethically and Responsibly — Alibaba Cloud", "photo_path": "images/using_generative_ai_ethically_and_responsibly.jpg" },
+    { "name": "Adoption of Generative AI Ethically and Responsibly — Alibaba Cloud", "photo_path": "images/adoption_generative_AI_ethically_and_responsibly.jpg" },
+    { "name": "Pix digital skills certification", "pdf_link": "pdf/pix.pdf" }
+  ],
+  "languages": [
+    { "language": "French", "level": "Native" },
+    { "language": "English", "level": "Fluent" },
+    { "language": "German", "level": "Fluent — 3-month stay with the Brigitte Sauzay exchange programme" }
+  ],
+  "hobbies": ["Entrepreneurship", "Intercultural travel", "Piano", "Fashion & luxury", "Civic engagement"],
+  "awards": [
+    "1st prize — regional Mathematics Olympiad",
+    "1st prize (team) — civic debate in German",
+    "1st prize (individual) — high-school public speaking contest",
+    "Participant — Fleur d'éloquence public speaking competition"
+  ],
+  "contact": {
+    "email": "anais.ferreira@edhec.com",
+    "linkedin": "https://www.linkedin.com/in/anaisferreira/",
+    "phone": "+33 7 68 67 75 77"
+  }
+}
