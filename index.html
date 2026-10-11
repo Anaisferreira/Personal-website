@@ -516,9 +516,20 @@ footer { background: var(--ink); color: var(--on-ink-muted); font-size: 14.5px; 
 
   function load(target, push) {
     var file = target === "en" ? "site.en.json" : "site.json";
-    var p = cache[target] ? Promise.resolve(cache[target]) : fetch(file).then(function (r) {
-      if (!r.ok) throw new Error(r.status);
-      return r.json();
+    function get(mode) {
+      return fetch(file, { cache: mode }).then(function (r) {
+        if (!r.ok) throw new Error("HTTP " + r.status + " on " + file);
+        return r.json();
+      });
+    }
+    // "no-cache" asks the server whether the file changed, so a visitor never
+    // gets a stale copy from an earlier visit. If the copy still looks like the
+    // old format (no "ui" block), force a fresh download once.
+    var p = cache[target] ? Promise.resolve(cache[target]) : get("no-cache").then(function (data) {
+      return data && data.ui ? data : get("reload");
+    }).then(function (data) {
+      if (!data || !data.ui) throw new Error(file + " has an unexpected format");
+      return data;
     });
     return p.then(function (data) {
       cache[target] = data;
@@ -530,7 +541,9 @@ footer { background: var(--ink); color: var(--on-ink-muted); font-size: 14.5px; 
         history.replaceState(null, "", url.pathname + url.search + location.hash);
       }
       render(data);
-    }).catch(function () {
+    }).catch(function (err) {
+      if (window.console) console.error(err);
+      if (document.querySelector(".load-error")) return;
       var msg = target === "en"
         ? "The site content couldn't be loaded. Reload the page; if it still fails, email me at anais.ferreira@edhec.com."
         : "Le contenu du site n'a pas pu être chargé. Rechargez la page ; si le problème persiste, écrivez-moi à anais.ferreira@edhec.com.";
