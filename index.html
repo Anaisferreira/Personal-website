@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Anaïs Ferreira — Data, Finance & Business Analytics</title>
-<meta name="description" content="Portfolio d'Anaïs Ferreira, étudiante en double diplôme EDHEC × UTC : projets en data, finance, machine learning et entrepreneuriat. Version anglaise disponible.">
-<meta property="og:title" content="Anaïs Ferreira — Data, Finance & Business Analytics">
+<title>Anaïs Ferreira — Data Science, Finance & Business Analytics</title>
+<meta name="description" content="Portfolio d'Anaïs Ferreira, étudiante en double diplôme EDHEC × UTC visant un MSc Data Science & Business Analytics en 2027 : projets en économétrie, machine learning, data et finance. Version anglaise disponible.">
+<meta property="og:title" content="Anaïs Ferreira — Data Science, Finance & Business Analytics">
 <meta property="og:description" content="Projets en data, finance, machine learning et entrepreneuriat — EDHEC × UTC.">
 <meta property="og:image" content="https://anaisferreira.github.io/Personal-website/images/photo_cv.jpg">
 <meta property="og:type" content="website">
@@ -64,6 +64,10 @@ p { margin: 0; text-wrap: pretty; }
 .hero-name { font-size: clamp(48px, 8vw, 92px); font-weight: 700; letter-spacing: -0.03em; line-height: 0.95; }
 .hero-headline { font-family: var(--display); font-weight: 500; font-size: clamp(22px, 2.6vw, 30px); color: var(--amber); margin-top: 22px; max-width: 22ch; line-height: 1.2; }
 .hero-bio { color: var(--on-ink); font-size: 18px; margin-top: 18px; max-width: 60ch; }
+.hero-goal { display: inline-flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; margin-top: 20px; padding: 8px 16px; border: 1.5px solid var(--amber); border-radius: 999px; }
+.hero-goal[hidden] { display: none; }
+.hero-goal-label { color: var(--amber); font-weight: 700; font-size: 13.5px; letter-spacing: 0.08em; text-transform: uppercase; }
+.hero-goal-text { color: #fff; font-family: var(--display); font-weight: 500; font-size: 17px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
 .btn { display: inline-flex; align-items: center; min-height: 46px; padding: 10px 20px; border-radius: 8px; font: 600 16px var(--body); text-decoration: none; }
 .btn-primary { background: var(--amber); color: var(--ink); }
@@ -84,6 +88,10 @@ section + section { border-top: 1px solid var(--rule); }
 .section-title { font-size: clamp(32px, 4vw, 44px); letter-spacing: -0.02em; }
 .section-intro { color: var(--muted); max-width: 52ch; margin-top: 8px; }
 .about-text { font-size: 19px; max-width: 68ch; color: #26324A; }
+.pillars { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; margin-top: 44px; }
+.pillar { border-top: 3px solid var(--amber); padding-top: 16px; }
+.pillar h3 { font-size: 20px; }
+.pillar p { margin-top: 8px; color: #2F3B52; }
 
 /* Project filters */
 .filters { display: flex; flex-wrap: wrap; gap: 8px; }
@@ -114,6 +122,10 @@ section + section { border-top: 1px solid var(--rule); }
 .meta { display: grid; grid-template-columns: auto 1fr; gap: 4px 14px; margin: 18px 0 0; font-size: 15.5px; }
 .meta dt { color: var(--muted); }
 .meta dd { margin: 0; }
+.approach { margin: 16px 0 0; display: grid; gap: 12px; }
+.approach div { padding-left: 14px; border-left: 3px solid var(--rule); }
+.approach dt { font-weight: 700; font-size: 15px; color: var(--blue); }
+.approach dd { margin: 2px 0 0; color: #2F3B52; }
 .links { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 18px; }
 .links a { font-weight: 600; }
 
@@ -176,6 +188,7 @@ footer { background: var(--ink); color: var(--on-ink-muted); font-size: 14.5px; 
   .tl-item { grid-template-columns: 1fr; gap: 6px; }
   .tl-logo { margin-top: 6px; }
   .skills-grid { grid-template-columns: 1fr; }
+  .pillars { grid-template-columns: 1fr; gap: 22px; }
   .certs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .more-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .contact-list { grid-template-columns: 1fr; }
@@ -216,6 +229,7 @@ footer { background: var(--ink); color: var(--on-ink-muted); font-size: 14.5px; 
           <h1 class="hero-name" id="name">Anaïs Ferreira</h1>
           <p class="hero-headline" id="headline"></p>
           <p class="hero-bio" id="bio"></p>
+          <p class="hero-goal" id="goal" hidden><span class="hero-goal-label" id="goal-label"></span><span class="hero-goal-text" id="goal-text"></span></p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#projects" id="cta-projects">Voir mes projets</a>
             <a class="btn btn-ghost" id="cta-linkedin" href="https://www.linkedin.com/in/anaisferreira/" target="_blank" rel="noopener">LinkedIn</a>
@@ -230,6 +244,7 @@ footer { background: var(--ink); color: var(--on-ink-muted); font-size: 14.5px; 
   <section id="about"><div class="wrap">
     <div class="section-head"><h2 class="section-title" id="about-title">À propos</h2></div>
     <p class="about-text" id="about-text"></p>
+    <div class="pillars" id="pillars"></div>
   </div></section>
 
   <section id="projects"><div class="wrap">
@@ -328,7 +343,7 @@ footer { background: var(--ink); color: var(--on-ink-muted); font-size: 14.5px; 
   function render(d) {
     var ui = d.ui;
     document.documentElement.lang = d.lang;
-    document.title = d.name + " — Data, Finance & Business Analytics";
+    document.title = d.name + " — Data Science, Finance & Business Analytics";
 
     // Top bar
     var nav = clear("topnav");
@@ -347,6 +362,13 @@ footer { background: var(--ink); color: var(--on-ink-muted); font-size: 14.5px; 
     setText("name", d.name);
     setText("headline", d.headline);
     setText("bio", d.bio);
+    if (d.objective) {
+      setText("goal-label", d.objective.label);
+      setText("goal-text", d.objective.text);
+      $("goal").hidden = false;
+    } else {
+      $("goal").hidden = true;
+    }
     setText("cta-projects", ui.cta_projects);
     var li = $("cta-linkedin");
     li.textContent = ui.cta_linkedin;
@@ -364,6 +386,10 @@ footer { background: var(--ink); color: var(--on-ink-muted); font-size: 14.5px; 
     // About
     setText("about-title", ui.about_title);
     setText("about-text", d.about);
+    var pil = clear("pillars");
+    (d.pillars || []).forEach(function (x) {
+      pil.appendChild(el("div", { class: "pillar" }, [el("h3", { text: x.title }), el("p", { text: x.text })]));
+    });
 
     // Projects
     setText("projects-title", ui.projects_title);
@@ -417,7 +443,10 @@ footer { background: var(--ink); color: var(--on-ink-muted); font-size: 14.5px; 
           el("p", { class: "project-desc", text: p.description }),
           showHighlight ? el("div", { class: "highlight" }, [el("span", { class: "num", text: p.highlight.value }), el("span", { class: "lbl", text: p.highlight.label })]) : null,
           !photos.length && p.highlight ? el("p", { class: "sr-only", text: p.highlight.value + " " + p.highlight.label }) : null,
-          p.details ? el("p", { class: "project-details", text: p.details }) : null,
+          (p.method || p.results) ? el("dl", { class: "approach" }, [
+            p.method ? el("div", null, [el("dt", { text: ui.method }), el("dd", { text: p.method })]) : null,
+            p.results ? el("div", null, [el("dt", { text: ui.results }), el("dd", { text: p.results })]) : null
+          ]) : (p.details ? el("p", { class: "project-details", text: p.details }) : null),
           metaRows.length ? el("dl", { class: "meta" }, metaRows) : null,
           links.length ? el("div", { class: "links" }, links) : null
         ])

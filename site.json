@@ -3,9 +3,18 @@
   "name": "Anaïs Ferreira",
   "title": "Étudiante en Ingénierie Digitale & Management — Data, Finance & Business Analytics (UTC/EDHEC)",
   "headline": "Je transforme des données en décisions business.",
-  "bio": "Étudiante en double diplôme Ingénierie Digitale & Management à l'UTC et à l'EDHEC Business School, spécialisation Data & Finance. Après six mois comme Data Analyst CRM chez Nespresso, je cherche à mettre l'analyse de données au service de la finance et de la stratégie.",
-  "about": "Data, finance et business analysis sont au cœur de mon parcours hybride entre ingénierie et management. À travers mes expériences professionnelles et académiques, j'ai développé des compétences en analyse de données, économétrie, machine learning, reporting, visualisation de données et analyse financière. Mon stage de Data Analyst CRM B2C chez Nespresso m'a permis de travailler sur des données clients, de construire des KPIs et des dashboards et de transformer des analyses quantitatives en recommandations business. En parallèle, ma formation à l'EDHEC me permet de développer une compréhension approfondie de la finance et des problématiques de Corporate & Investment Banking. Mon semestre à Shanghai University a renforcé mon ouverture interculturelle et ma capacité à évoluer dans des environnements internationaux.",
+  "bio": "Étudiante en double diplôme Ingénierie Digitale & Management à l'UTC et à l'EDHEC Business School, spécialisation Data & Finance. Après six mois comme Data Analyst CRM chez Nespresso, je souhaite approfondir la data science et la modélisation dans un MSc Data Science & Business Analytics à partir de 2027.",
+  "objective": {
+    "label": "Objectif 2027",
+    "text": "MSc Data Science & Business Analytics"
+  },
+  "about": "Mon parcours réunit trois dimensions complémentaires : une double formation d'ingénieure (UTC) et de management (EDHEC), une ouverture internationale construite entre la France, l'Allemagne et la Chine, et un socle quantitatif en économétrie, machine learning et finance. J'ai appliqué ces méthodes à des projets concrets, de la prévisibilité des rendements du Brent à la prédiction du comportement de clients bancaires, en passant par le credit scoring et l'analyse géospatiale de l'immobilier à Shanghai. En entreprise, comme Data Analyst CRM chez Nespresso, j'ai construit des KPIs et des dashboards et transformé des analyses en recommandations. Un MSc Data Science & Business Analytics est pour moi l'étape logique pour approfondir la modélisation et le machine learning, au service de décisions business et financières.",
   "photo_path": "images/photo_cv.jpg",
+  "pillars": [
+    { "title": "Un parcours franco-allemand", "text": "Baccalauréat franco-allemand Abibac : Bac mention Bien et Abitur mention Très Bien, spécialités mathématiques et physique. Allemand courant, renforcé par un séjour de trois mois en Allemagne (programme Brigitte Sauzay)." },
+    { "title": "Ingénierie et management, de la France à la Chine", "text": "Double diplôme UTC × EDHEC, qui allie rigueur d'ingénieure et compréhension des enjeux business, complété par un semestre à Shanghai University (UTSEUS) avec des projets menés en anglais." },
+    { "title": "Économétrie, machine learning et finance", "text": "Régressions MCO, quantiles et logistiques, K-Means, validation croisée et analyse géospatiale, avec Python, R et SQL ; finance d'entreprise, Fixed Income et modélisation financière." }
+  ],
   "facts": [
     { "value": "6 mois", "label": "Data Analyst CRM chez Nespresso" },
     { "value": "3 pays", "label": "France, Allemagne, Chine" },
@@ -26,13 +35,9 @@
     "cta_linkedin": "Me suivre sur LinkedIn",
     "about_title": "À propos",
     "projects_title": "Projets",
-    "projects_intro": "Une sélection de projets académiques et entrepreneuriaux, avec les rapports complets à consulter.",
+    "projects_intro": "Une sélection de projets académiques et entrepreneuriaux. Pour chaque projet data, la méthode et les résultats sont résumés, avec le code sur GitHub ou le rapport complet.",
     "filter_all": "Tous",
-    "categories": {
-      "data": "Data, IA & Finance",
-      "entrepreneurship": "Entrepreneuriat",
-      "strategy": "Stratégie & communication"
-    },
+    "categories": { "data": "Data, IA & Finance", "entrepreneurship": "Entrepreneuriat", "strategy": "Stratégie & communication" },
     "role": "Mon rôle",
     "team": "Équipe",
     "tools": "Outils",
@@ -48,12 +53,14 @@
     "awards_title": "Distinctions",
     "hobbies_title": "Centres d'intérêt",
     "contact_title": "Travaillons ensemble",
-    "contact_text": "Je suis ouverte aux opportunités en data, finance et stratégie. Le plus simple est de m'écrire ou de m'ajouter sur LinkedIn.",
+    "contact_text": "Je suis ouverte aux échanges sur mon projet de Master comme aux opportunités en data et en finance. Le plus simple est de m'écrire ou de m'ajouter sur LinkedIn.",
     "email_label": "E-mail",
     "phone_label": "Téléphone",
     "linkedin_label": "LinkedIn",
     "footer": "Site personnel d'Anaïs Ferreira",
-    "load_error": "Le contenu du site n'a pas pu être chargé. Rechargez la page ; si le problème persiste, écrivez-moi à anais.ferreira@edhec.com."
+    "load_error": "Le contenu du site n'a pas pu être chargé. Rechargez la page ; si le problème persiste, écrivez-moi à anais.ferreira@edhec.com.",
+    "method": "Méthode",
+    "results": "Résultats"
   },
   "skills": [
     {
@@ -63,7 +70,7 @@
     },
     {
       "category": "Data Science & Économétrie",
-      "technologies": ["pandas", "scikit-learn", "Régression linéaire", "Régression logistique", "Régression quantile", "K-Means", "Tests statistiques", "Séries temporelles"],
+      "technologies": ["pandas", "scikit-learn", "Régression linéaire", "Régression logistique", "Régression quantile", "K-Means", "Tests statistiques", "Séries temporelles", "Validation croisée", "Analyse géospatiale"],
       "description": "Modélisation statistique et machine learning appliqués à des problématiques financières, marketing et business."
     },
     {
@@ -89,21 +96,6 @@
   ],
   "projects": [
     {
-      "id": "bank-marketing-data-mining",
-      "category": "data",
-      "title": "Prédire et segmenter les clients d'une banque",
-      "subtitle": "Data Mining & Machine Learning — Bank Marketing",
-      "location": "EDHEC Business School",
-      "period": "2025",
-      "description": "Sur plus de 40 000 clients, identifier ceux qui souscriront à un dépôt à terme, malgré des classes très déséquilibrées.",
-      "details": "Analyse exploratoire, préparation des variables numériques et catégorielles, régression logistique validée par validation croisée, puis segmentation K-Means (méthode du coude, k = 3). Résultat : un segment à forte propension, avec 63 % de souscription, à cibler en priorité, et un segment à 5 % à exclure des campagnes.",
-      "highlight": { "value": "0,94", "label": "ROC AUC sur le jeu de test" },
-      "technologies": ["Python", "pandas", "scikit-learn", "Régression logistique", "K-Means", "Validation croisée"],
-      "photo_path": "images/projects/bank-marketing-clusters.jpg",
-      "photo_alt": "Nuage de points des trois segments clients selon l'âge et le taux Euribor 3 mois",
-      "pdf_link": "pdf/Data_Mining_project_Anaïs_Ferreira.pdf"
-    },
-    {
       "id": "brent-oil-econometrics",
       "category": "data",
       "title": "Le pétrole Brent est-il prévisible au jour le jour ?",
@@ -111,7 +103,8 @@
       "location": "EDHEC Business School",
       "period": "2025",
       "description": "Le rendement d'hier aide-t-il à expliquer celui d'aujourd'hui, et cette relation change-t-elle dans les queues de distribution ?",
-      "details": "Log-rendements quotidiens de 1987 à 2020, MCO simple et multiple, test F joint, diagnostics d'hétéroscédasticité et régressions quantiles (τ de 0,1 à 0,9) sous R. Conclusion : la prévisibilité de la moyenne est quasi nulle et la dynamique passe surtout par la volatilité, ce qui ouvre la voie aux modèles GARCH.",
+      "method": "Log-rendements quotidiens du Brent de 1987 à 2020, régressions MCO simple et multiple sur les rendements passés, test F joint, diagnostics d'hétéroscédasticité et régressions quantiles (τ de 0,1 à 0,9), sous R.",
+      "results": "La prévisibilité du rendement moyen est quasi nulle : le rendement d'hier n'explique presque pas celui d'aujourd'hui. La dynamique passe surtout par la volatilité, ce qui ouvre la voie aux modèles GARCH.",
       "highlight": { "value": "8 357", "label": "rendements journaliers analysés" },
       "technologies": ["R", "MCO", "Régression quantile", "Tests statistiques", "Séries temporelles"],
       "photo_path": "images/projects/brent-price.jpg",
@@ -127,10 +120,59 @@
       "period": "2025",
       "team": "Équipe de 4",
       "description": "Une plateforme qui relie des personnes et des communautés : adhésions, messagerie, compétences, services échangés et votes d'exclusion.",
-      "details": "Du modèle conceptuel au schéma logique : 12 tables PostgreSQL, héritage Entité → Individu / Communauté, intégrité garantie par clés, contraintes UNIQUE et CHECK. Vues métier, requête récursive pour reconstruire les fils de discussion, calcul de distance GPS entre membres et transactions sécurisées. Deux interfaces Python (administrateur et utilisateur) et un générateur de données de test.",
+      "method": "Du modèle conceptuel au schéma logique : 12 tables PostgreSQL, héritage Entité → Individu / Communauté, intégrité garantie par clés, contraintes UNIQUE et CHECK. Vues métier, requête récursive pour reconstruire les fils de discussion, calcul de distance GPS entre membres et transactions sécurisées.",
+      "results": "Une base cohérente et exploitable, pilotée par deux interfaces Python (administrateur et utilisateur, psycopg2 et Tkinter) et alimentée par un générateur de données de test.",
       "highlight": { "value": "12", "label": "tables reliées" },
       "technologies": ["PostgreSQL", "SQL", "Python", "psycopg2", "Tkinter", "Modélisation de données"],
       "github_link": "https://github.com/Anaisferreira/Data_Base_Management"
+    },
+    {
+      "id": "bank-marketing-data-mining",
+      "category": "data",
+      "title": "Prédire et segmenter les clients d'une banque",
+      "subtitle": "Data Mining & Machine Learning — Bank Marketing",
+      "location": "EDHEC Business School",
+      "period": "2025",
+      "description": "Sur plus de 40 000 clients, identifier ceux qui souscriront à un dépôt à terme, malgré des classes très déséquilibrées.",
+      "method": "Analyse exploratoire (11 % de souscripteurs seulement), pipeline scikit-learn avec standardisation et one-hot encoding, régression logistique évaluée par validation croisée stratifiée à 5 plis, puis segmentation K-Means (méthode du coude, k = 3).",
+      "results": "ROC AUC de 0,94 et précision de 71 % sur les souscripteurs. La segmentation fait ressortir un groupe de clients déjà contactés lors de campagnes précédentes, avec 63 % de souscription, contre 5 % pour le segment le plus large : la banque a intérêt à cibler ces relances en priorité.",
+      "highlight": { "value": "0,94", "label": "ROC AUC sur le jeu de test" },
+      "technologies": ["Python", "pandas", "scikit-learn", "Régression logistique", "K-Means", "Validation croisée"],
+      "photo_path": "images/projects/bank-marketing-clusters.jpg",
+      "photo_alt": "Nuage de points des trois segments clients selon l'âge et le taux Euribor 3 mois",
+      "pdf_link": "pdf/Data_Mining_project_Anaïs_Ferreira.pdf",
+      "github_link": "https://github.com/Anaisferreira/Bank_marketing"
+    },
+    {
+      "id": "credit-scoring",
+      "category": "data",
+      "title": "Prédire le score de crédit d'un client",
+      "subtitle": "Machine learning — credit scoring",
+      "location": "EDHEC Business School",
+      "period": "2025",
+      "team": "Équipe de 3",
+      "description": "À partir de 100 000 observations financières et personnelles, classer chaque client en score de crédit Good, Standard ou Poor, un enjeu central d'évaluation du risque en banque.",
+      "method": "Nettoyage de données bruitées (caractères parasites, valeurs incohérentes, historique de crédit converti en mois), analyse exploratoire par classe, one-hot encoding, imputation et standardisation, puis régression logistique multinomiale évaluée par la log-loss et le F1-score.",
+      "results": "73 % de prédictions correctes sur trois classes (F1 macro de 0,71, log-loss de 0,715). La dette en cours et les retards de paiement ressortent comme les variables les plus déterminantes.",
+      "highlight": { "value": "73 %", "label": "de prédictions correctes sur 3 classes" },
+      "technologies": ["Python", "pandas", "scikit-learn", "Régression logistique", "Nettoyage de données"],
+      "github_link": "https://github.com/Anaisferreira/Credit_scoring"
+    },
+    {
+      "id": "shanghai-real-estate",
+      "category": "data",
+      "title": "Le métro fait-il monter les prix de l'immobilier à Shanghai ?",
+      "subtitle": "Analyse géospatiale et régression — immobilier",
+      "location": "Shanghai University — UTSEUS",
+      "period": "2025",
+      "description": "Croiser 450 000 annonces immobilières avec les entrées du métro pour mesurer l'effet de la proximité d'une station sur le prix au mètre carré.",
+      "method": "Nettoyage et filtrage géographique des annonces (Anjuke, 2017), extraction des entrées de métro d'une base de points d'intérêt (Gaode), calcul vectorisé de la distance à l'entrée la plus proche avec GeoPandas et Shapely, puis régression MCO du prix au m² sur la distance et analyse des résidus.",
+      "results": "Effet négatif et très significatif : environ −2 ¥/m² par mètre d'éloignement, soit −2 000 ¥/m² par kilomètre. La distance n'explique toutefois que 17,5 % de la variance, et les résidus montrent une forte autocorrélation spatiale, d'où des pistes d'amélioration (distance au centre, effets de quartier).",
+      "highlight": { "value": "−2 ¥/m²", "label": "par mètre d'éloignement du métro" },
+      "technologies": ["Python", "GeoPandas", "Shapely", "statsmodels", "Régression MCO", "Cartographie"],
+      "photo_path": "images/projects/shanghai-listings-map.jpg",
+      "photo_alt": "Carte de Shanghai où chaque point bleu représente une annonce immobilière",
+      "github_link": "https://github.com/Anaisferreira/shanghai-real-estate-subway"
     },
     {
       "id": "curtain-x",
@@ -218,14 +260,7 @@
       "location": "Issy-les-Moulineaux, France",
       "period": "Février – Juillet 2026",
       "description": "Analyse des données CRM et du comportement client pour accompagner les équipes Marketing et Business dans le pilotage de la performance B2C.",
-      "achievements": [
-        "Extraction et analyse de données clients issues de Snowflake",
-        "Nettoyage, validation et fiabilisation des jeux de données utilisés pour les analyses CRM",
-        "Construction et suivi de KPIs liés aux offres commerciales et aux campagnes marketing",
-        "Création et automatisation de reportings et de dashboards sous Excel et Power BI",
-        "Analyses ad hoc sur le comportement et la performance des clients",
-        "Synthèse des résultats et recommandations pour les équipes CRM, Marketing et Business Analytics"
-      ],
+      "achievements": ["Extraction et analyse de données clients issues de Snowflake", "Nettoyage, validation et fiabilisation des jeux de données utilisés pour les analyses CRM", "Construction et suivi de KPIs liés aux offres commerciales et aux campagnes marketing", "Création et automatisation de reportings et de dashboards sous Excel et Power BI", "Analyses ad hoc sur le comportement et la performance des clients", "Synthèse des résultats et recommandations pour les équipes CRM, Marketing et Business Analytics"],
       "technologies": ["Snowflake", "SQL", "Excel", "Power BI", "CRM Analytics", "Suivi de KPIs"],
       "photo_path": "images/nespresso_logo.jpg"
     },
@@ -235,11 +270,7 @@
       "location": "Compiègne, France",
       "period": "Septembre 2024 – Février 2025",
       "description": "Pilotage de la communication digitale de la Junior-Entreprise : stratégie, création de contenu et suivi des performances.",
-      "achievements": [
-        "15 publications Instagram cumulant plus de 70 000 vues et +45 % de portée en 5 mois",
-        "15 publications LinkedIn générant 25 000 impressions",
-        "Campagnes ciblées pour recruter et fidéliser les membres"
-      ],
+      "achievements": ["15 publications Instagram cumulant plus de 70 000 vues et +45 % de portée en 5 mois", "15 publications LinkedIn générant 25 000 impressions", "Campagnes ciblées pour recruter et fidéliser les membres"],
       "technologies": ["Stratégie digitale", "Marketing de contenu", "Analyse de performance"],
       "photo_path": "images/jutc_logo.jpg"
     },
@@ -249,10 +280,7 @@
       "location": "Villers-Sous-Saint-Leu, France",
       "period": "2025",
       "description": "Accueil du public et participation à des missions administratives, comptables et financières.",
-      "achievements": [
-        "Accueil de plus de 100 usagers par semaine",
-        "Contribution à la gestion et au suivi d'un budget municipal de plus de 2 M€"
-      ],
+      "achievements": ["Accueil de plus de 100 usagers par semaine", "Contribution à la gestion et au suivi d'un budget municipal de plus de 2 M€"],
       "technologies": ["Comptabilité", "Gestion budgétaire", "Excel"]
     },
     {
@@ -261,10 +289,7 @@
       "location": "Villers-Sous-Saint-Leu, France",
       "period": "Janvier – Février 2024",
       "description": "Découverte d'un environnement industriel et participation aux activités de production.",
-      "achievements": [
-        "Contrôle qualité et conditionnement de 50 000 produits par semaine",
-        "Participation à la maintenance des machines de production"
-      ],
+      "achievements": ["Contrôle qualité et conditionnement de 50 000 produits par semaine", "Participation à la maintenance des machines de production"],
       "technologies": ["Production industrielle", "Contrôle qualité", "Travail en équipe"],
       "photo_path": "images/imerys.jpg",
       "pdf_link": "pdf/stage_imerys.pdf",
@@ -278,11 +303,7 @@
       "period": "Depuis 2017",
       "photo_path": "images/memoire_avenir_citoyen.jpeg"
     },
-    {
-      "role": "Ambassadrice et déléguée",
-      "organization": "Unibuddy UTC/EDHEC",
-      "period": "Depuis 2024"
-    },
+    { "role": "Ambassadrice et déléguée", "organization": "Unibuddy UTC/EDHEC", "period": "Depuis 2024" },
     {
       "role": "Vice-présidente",
       "organization": "Conseil Départemental Jeune",
@@ -331,12 +352,7 @@
     { "language": "Allemand", "level": "Courant — séjour de 3 mois avec le programme Brigitte Sauzay" }
   ],
   "hobbies": ["Entrepreneuriat", "Voyages interculturels", "Piano", "Mode & luxe", "Engagement citoyen"],
-  "awards": [
-    "1er prix académique — Olympiades de mathématiques",
-    "1er prix par équipe — débat citoyen en allemand",
-    "1er prix individuel — concours d'éloquence du lycée",
-    "Participation — Fleur d'éloquence"
-  ],
+  "awards": ["1er prix académique — Olympiades de mathématiques", "1er prix par équipe — débat citoyen en allemand", "1er prix individuel — concours d'éloquence du lycée", "Participation — Fleur d'éloquence"],
   "contact": {
     "email": "anais.ferreira@edhec.com",
     "linkedin": "https://www.linkedin.com/in/anaisferreira/",
